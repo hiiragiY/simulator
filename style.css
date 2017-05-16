@@ -60,10 +60,10 @@ td.led:after{
 }
 
 table.SAWARABI {
-    font-family: "Noto Sans Japanese";
+    font-family: "ＭＳ ゴシック",sans-serif; 
 }
 tr.SAWARABI {
-    font-family: "Noto Sans Japanese";
+    font-family: "ＭＳ ゴシック",sans-serif; 
 }
 
 div.BOARD-CONTENTS {

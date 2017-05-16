@@ -27,11 +27,15 @@ function testplay_sound()
 		var id = "partsListSelect_hour";
 		var index = document.getElementById(id).selectedIndex;
 		testfile = soundData_hour[index][0];
+		var index_hour = soundData_hour[index][1].substring(0,soundData_hour[index][1].indexOf("時"));
+        document.getElementById("output_hour").textContent = index_hour;
 	}
 	if(test_minute){
 		var id = "partsListSelect_minute";
 		var index = document.getElementById(id).selectedIndex;
 		testfile = soundData_minute[index][0];
+		var index_minute = soundData_minute[index][1].substring(0,soundData_minute[index][1].indexOf("分"));
+        document.getElementById("output_minute").textContent = index_minute;
 	}
 	if(test_silent){
 		var id = "partsListSelect_silent";
@@ -43,7 +47,7 @@ function testplay_sound()
 		var index = document.getElementById(id).selectedIndex;
 		testfile = soundData_for[index][0];
         var index_for = soundData_for[index][1].substring(0,soundData_for[index][1].indexOf("("));
-        document.getElementById("output").textContent = index_for;
+        document.getElementById("output_for").textContent = index_for;
 	}
 	if(test_and){
 		var id = "partsListSelect_and";
@@ -65,7 +69,7 @@ function testplay_sound()
 		if(index == 1){
         	document.getElementById("output_type").innerHTML = "<font color=\"#E68115\">" + soundData_type[index][1] + "</font>";
     	}
-		if(index == 2){
+		if(index == 2 || index == 3){
         	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + soundData_type[index][1] + "</font>";
     	}
 	}
@@ -73,6 +77,24 @@ function testplay_sound()
 		var id = "partsListSelect_ryousu";
 		var index = document.getElementById(id).selectedIndex;
 		testfile = soundData_ryousu[index][0];
+		if(index == 0){
+        	document.getElementById("output_ryousu").innerHTML = "△1〜　3";
+    	}
+		if(index == 1){
+        	document.getElementById("output_ryousu").innerHTML = "△1〜4";
+    	}
+		if(index == 2){
+        	document.getElementById("output_ryousu").innerHTML = "△1〜5";
+    	}
+    	if(index == 3){
+        	document.getElementById("output_ryousu").innerHTML = "△1〜6";
+    	}
+    	if(index == 4){
+        	document.getElementById("output_ryousu").innerHTML = "△1〜7";
+    	}
+    	if(index == 5){
+        	document.getElementById("output_ryousu").innerHTML = "△1〜8";
+    	}
 	}
 	audiotest = new Audio(testfile);
 	audiotest.play();

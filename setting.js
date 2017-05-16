@@ -243,10 +243,10 @@ soundData =
  ]
  soundData_minute=
  [
-  ["sound/chodo-hatsu.mp3", "ちょうど発"],
-  ["sound/3hun-hatsu.mp3", "3分発"],
-  ["sound/7hun-hatsu.mp3", "7分発"],
-  ["sound/9hun-hatsu.mp3", "9分発"],
+  ["sound/chodo-hatsu.mp3", "00分(ちょうど)発"],
+  ["sound/3hun-hatsu.mp3", "03分発"],
+  ["sound/7hun-hatsu.mp3", "07分発"],
+  ["sound/9hun-hatsu.mp3", "09分発"],
   ["sound/11hun-hatsu.mp3", "11分発"],
   ["sound/15hun-hatsu.mp3", "15分発"],
   ["sound/23hun-hatsu.mp3", "23分発"],
@@ -370,7 +370,7 @@ soundData_type=
   ["sound/local.mp3", "普　通"],
   ["sound/rapid.mp3", "快　速"],
   ["sound/specialrapidservise.mp3", "新 快 速"],
-  ["sound/express.mp3", "特急"],
+  ["sound/express.mp3", "特　急"],
   ["sound/sindai-express.mp3", "寝台特急"],
 
   ["sound/superhakuto.mp3", "スーパーはくと"],
