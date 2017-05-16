@@ -13,6 +13,11 @@ span.cubettl{
     font-size: 80%;
 }
 
+div.text-narrow {
+    transform: scale(0.7, 1);
+    display: inline-block;
+}
+
 /*Safariのみ見え方が異なるため、ハックで調整*/
 body:last-child:not(:root:root) .cubettl {
 padding-top:0px;

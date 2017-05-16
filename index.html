@@ -41,13 +41,13 @@
 
                     <table border="0" bgcolor="#111111" cellpadding="5" Cellspacing="0" style="font-family: "Noto Sans Japanese";border:thick width:800px;height:30px;">
                         <tr>
-                                <td width="200px">
+                                <td width="120px">
                                     <font color="white"><center>種　　別<br /><font size="1">Type</font></center></font>
                                 </td>
-                                <td width="150px">
-                                    <font color="white"><center>乗 車 位 置<br /><font size="1">Boarding Position</font></center></font>
+                                <td width="270px">
+                                    <font color="white"><center>列車名/乗車位置<br /><font size="1">Train Name / Boarding Position</font></center></font>
                                 </td>
-                                <td width="150px">
+                                <td width="110px">
                                     <font color="white"><center>時　　刻<br /><font size="1">Departure Time</font></center></font>
                                 </td>
                                 <td width="250px">
@@ -58,18 +58,18 @@
                                 </td>
                         </tr>
                         <tr bgcolor="#161616" class="SAWARABI">
-                                <td width="200px" class="led">
+                                <td width="120px" class="led">
                                     <font color="#377F0B" size="6"><span style="letter-spacing: -4px"><center><div id="output_type">普　通</div></center></span></font>
                                 </td>
-                                <td width="150px" class="led">
-                                    <font color="#377F0B" size="6px"><center><div id="output_ryousu">△1〜8</div></center></font>
+                                <td width="270px" class="led">
+                                    <font color="#377F0B" size="6px"><center><div id="output_ryousu" style="display: inline;">△1〜8</div></center></font>
                                 </td>
-                                <td width="150px" class="led">
+                                <td width="110px" class="led">
                                     <font color="#E68115" size="6"><center><div id="output_hour" style="display: inline;">0</div>:<div id="output_minute" style="display: inline;">23</div></center></font>
                                 </td>
                                 <td width="250px" class="led">    
                                     </style><font color="#377F0B" size="6"><center>
-                                <div id="output_for">西宮名塩</div></center></font>
+                                <div id="output_for">播磨新宮</div></center></font>
                                 </td>
                                 <td width="250px" class="led">
                                     <font color="red" size="5"><center><span style="letter-spacing: -3px">遅れ約6分</span></center></font>
@@ -110,7 +110,7 @@
                         <br>
                         <!--=====時選択======================================-->
                         <div style="float:left;">時<br />
-                            <select  size='8' id='partsListSelect_hour' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_hour()' ondblclick='setSoundParts_hour()' >
+                            <select  size='8' id='partsListSelect_hour' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_hour();reload_hour()' ondblclick='setSoundParts_hour()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_hour.length ; i++)
                                     {
@@ -121,7 +121,7 @@
                         </div>
                         <!--=====分選択======================================-->
                         <div style="float:left;">分<br />
-                            <select class="SAWARABI" size='8' id='partsListSelect_minute' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_minute()' ondblclick='setSoundParts_minute()' >
+                            <select class="SAWARABI" size='8' id='partsListSelect_minute' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_minute();reload_minute()' ondblclick='setSoundParts_minute()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_minute.length ; i++)
                                     {
@@ -143,7 +143,7 @@
                         </div>
                         <!--=====行き先======================================-->
                         <div style="float:left;">駅名(⤴)<br />
-                            <select class="SAWARABI" size='8' id='partsListSelect_for' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_for()' ondblclick='setSoundParts_for()' >
+                            <select class="SAWARABI" size='8' id='partsListSelect_for' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_for();reload_for()' ondblclick='setSoundParts_for()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_for.length ; i++)
                                     {
@@ -179,7 +179,7 @@
                         </div>
                         <!--=====種別======================================-->
                         <div style="float:left;">種別<br /> <!-- （特急・号車番号) -->
-                        <select class="SAWARABI" size='8' id='partsListSelect_type' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_type()' ondblclick='setSoundParts_type()' >
+                        <select class="SAWARABI" size='8' id='partsListSelect_type' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_type();reload_type()' ondblclick='setSoundParts_type()' >
                         <script type="text/javascript">
                         for(i=0 ; i<soundData_type.length ; i++)
                         {
@@ -190,7 +190,7 @@
                         </div>
                         <!--=====編成両数======================================-->
                         <div style="float:left;">編成両数<br /> <!-- (接続詞に注意) -->
-                            <select class="SAWARABI" size='8' id='partsListSelect_ryousu' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_ryousu()' ondblclick='setSoundParts_ryousu()' >
+                            <select class="SAWARABI" size='8' id='partsListSelect_ryousu' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_ryousu();reload_ryousu()' ondblclick='setSoundParts_ryousu()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_ryousu.length ; i++)
                                     {

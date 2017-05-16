@@ -27,15 +27,11 @@ function testplay_sound()
 		var id = "partsListSelect_hour";
 		var index = document.getElementById(id).selectedIndex;
 		testfile = soundData_hour[index][0];
-		var index_hour = soundData_hour[index][1].substring(0,soundData_hour[index][1].indexOf("時"));
-        document.getElementById("output_hour").textContent = index_hour;
 	}
 	if(test_minute){
 		var id = "partsListSelect_minute";
 		var index = document.getElementById(id).selectedIndex;
 		testfile = soundData_minute[index][0];
-		var index_minute = soundData_minute[index][1].substring(0,soundData_minute[index][1].indexOf("分"));
-        document.getElementById("output_minute").textContent = index_minute;
 	}
 	if(test_silent){
 		var id = "partsListSelect_silent";
@@ -46,8 +42,6 @@ function testplay_sound()
 		var id = "partsListSelect_for";
 		var index = document.getElementById(id).selectedIndex;
 		testfile = soundData_for[index][0];
-        var index_for = soundData_for[index][1].substring(0,soundData_for[index][1].indexOf("("));
-        document.getElementById("output_for").textContent = index_for;
 	}
 	if(test_and){
 		var id = "partsListSelect_and";
@@ -63,43 +57,85 @@ function testplay_sound()
 		var id = "partsListSelect_type";
 		var index = document.getElementById(id).selectedIndex;
 		testfile = soundData_type[index][0];
-		if(index == 0){
-        	document.getElementById("output_type").innerHTML = soundData_type[index][1];
-    	}
-		if(index == 1){
-        	document.getElementById("output_type").innerHTML = "<font color=\"#E68115\">" + soundData_type[index][1] + "</font>";
-    	}
-		if(index == 2 || index == 3){
-        	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + soundData_type[index][1] + "</font>";
-    	}
 	}
 	if(test_ryousu){
 		var id = "partsListSelect_ryousu";
 		var index = document.getElementById(id).selectedIndex;
 		testfile = soundData_ryousu[index][0];
-		if(index == 0){
-        	document.getElementById("output_ryousu").innerHTML = "△1〜　3";
-    	}
-		if(index == 1){
-        	document.getElementById("output_ryousu").innerHTML = "△1〜4";
-    	}
-		if(index == 2){
-        	document.getElementById("output_ryousu").innerHTML = "△1〜5";
-    	}
-    	if(index == 3){
-        	document.getElementById("output_ryousu").innerHTML = "△1〜6";
-    	}
-    	if(index == 4){
-        	document.getElementById("output_ryousu").innerHTML = "△1〜7";
-    	}
-    	if(index == 5){
-        	document.getElementById("output_ryousu").innerHTML = "△1〜8";
-    	}
 	}
+
 	audiotest = new Audio(testfile);
 	audiotest.play();
 }
 
+function reload_hour() {
+	var id = "partsListSelect_hour";
+	var index = document.getElementById(id).selectedIndex;
+	var index_hour = soundData_hour[index][1].substring(0,soundData_hour[index][1].indexOf("時"));
+    document.getElementById("output_hour").textContent = index_hour;
+}
+
+function reload_minute() {
+	var id = "partsListSelect_minute";
+	var index = document.getElementById(id).selectedIndex;
+	var index_minute = soundData_minute[index][1].substring(0,soundData_minute[index][1].indexOf("分"));
+    document.getElementById("output_minute").textContent = index_minute;
+}
+
+function reload_for() {
+	var id = "partsListSelect_for";
+	var index = document.getElementById(id).selectedIndex;
+    var index_for = soundData_for[index][1].substring(0,soundData_for[index][1].indexOf("("));
+    document.getElementById("output_for").textContent = index_for;
+}
+function reload_ryousu() {
+	var id = "partsListSelect_ryousu";
+	var index = document.getElementById(id).selectedIndex;
+	if(index == 0){
+    	document.getElementById("output_ryousu").innerHTML = "△1〜3";
+    }
+	if(index == 1){
+        document.getElementById("output_ryousu").innerHTML = "△1〜4";
+    }
+	if(index == 2){
+        document.getElementById("output_ryousu").innerHTML = "△1〜5";
+    }
+    if(index == 3){
+        document.getElementById("output_ryousu").innerHTML = "△1〜6";
+    }
+    if(index == 4){
+        document.getElementById("output_ryousu").innerHTML = "△1〜7";
+    }
+    if(index == 5){
+        document.getElementById("output_ryousu").innerHTML = "△1〜8";
+    }
+}
+function reload_type() {
+	var id = "partsListSelect_type";
+	var index = document.getElementById(id).selectedIndex;
+	if(index == 0){
+       	document.getElementById("output_type").innerHTML = soundData_type[index][1];
+    }
+	if(index == 1){
+    	document.getElementById("output_type").innerHTML = "<font color=\"#E68115\">" + soundData_type[index][1] + "</font>";
+    }
+	if(index == 2 || index == 3){
+        document.getElementById("output_type").innerHTML = "<font color=\"red\">" + soundData_type[index][1] + "</font>";
+    }
+    if(index == 5){
+    	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -6px\">ｽｰﾊﾟｰ<div class=\"text-narrow\">はくと</div>５号</font>";
+    }
+    if(index == 6){
+    	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -6px\">ﾋﾞｸﾄﾘｰ<div class=\"text-narrow\">はくと</div>号</font>";
+    }
+    if(index == 7){
+    	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -4px\">びわこｴｸｽﾌﾟﾚｽ</font>";
+    }
+	
+}
 
 //真偽値で何が今選ばれているかを判定する（新しく選ばれた時点で前回選ばれていたものをfalseとする）
 
