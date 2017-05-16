@@ -1,0 +1,328 @@
+div.TITLE-BOARD {
+    width: 1000px;
+    height: 350px;
+    background-color: #111111;
+    font-family: "Mplus 1p";
+    margin: auto;
+}
+span.cubettl{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    color:#ffffff;
+    font-size: 80%;
+}
+
+/*Safariのみ見え方が異なるため、ハックで調整*/
+body:last-child:not(:root:root) .cubettl {
+padding-top:0px;
+padding-bottom:1px;
+}
+
+div.HOMENUM {
+    width: 200px;
+    height: 280px;
+    float:left;
+    position: relative;
+    background-color: #111111;
+    margin: auto;
+}
+
+div.HOMENUM img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  margin: auto;
+}
+
+td.led {
+width:auto;
+position:relative;
+}
+
+td.led:after{
+    content:' ';
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:url("bg-led.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    -webkit-background-size:2px 2px;
+    -moz-background-size:2px 2px;
+    -ms-background-size:2px 2px;
+    -o-background-size:2px 2px;
+    background-size:2px 2px;
+    z-index:10;
+}
+
+table.SAWARABI {
+    font-family: "Noto Sans Japanese";
+}
+tr.SAWARABI {
+    font-family: "Noto Sans Japanese";
+}
+
+div.BOARD-CONTENTS {
+    width: 800px;
+    float: right;
+    background-color: #111111;
+    height:280px;
+    margin: auto;
+}
+
+body{
+ margin:0;
+ /*background-color: #222222;*/
+
+}
+div.SITE_WIDTH {
+	width: 1000px;
+	margin: auto;
+	font-family: "Rounded Mplus 1c", sans-serif;
+    margin: auto;
+}
+p.title {
+    width: 1000px;
+	font-size: 150%;
+	font-family: "Noto Sans Japanese";
+    background-color:#ffffff;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    padding-bottom: 10px;
+    color: #000000;
+    margin-bottom: -20px;
+}
+p.title_underbar{
+    width: 1000px;
+    font-size: 80%;
+    font-family: "Noto Sans Japanese";
+    background-color:#227ac2;
+    padding: 0px;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    color: #ffffff;
+}
+div.MAIN {
+    float: center;
+    width: 1000px;
+    height: 860px;
+    font-family: 'Rounded Mplus 1c', sans-serif;
+    padding: 5px;
+    background-color: #111111;
+    margin: auto;
+    display:block;
+}
+div.SELECT_SPACE {
+	float: left;
+	width: 650px;
+    height: 560px;
+	font-family: 'Rounded Mplus 1c', sans-serif;
+    color: #ffffff;
+    background-color: #111111;
+    text-align: center;
+    font-size: 90%;
+	margin: 0;
+}
+div.SELECT_SPACE select{
+    font-family: "Mplus 1p";
+    color: #ffffff;
+    background-color: #161616;
+}
+div.WORKSPACE {
+	float: right;
+	width: 350px;
+    height: 560px;
+	font-family: 'Rounded Mplus 1c', sans-serif;
+    color: #ffffff;
+    background-color: #111111;
+	margin: 0;
+}
+div.WORKSPACE textarea{
+    font-family: "Mplus 1p";
+    color: #ffffff;
+    background-color: #161616;
+}
+
+div.BUTTON_S {
+    width: 1000px;
+    height: 120px;
+    display:block;
+}
+
+div.EXPRENATION {
+    float: center;
+    width: 1000px;
+    font-family: "Noto Sans Japanese";
+    margin: 0;
+    display:block;
+    color: #ffffff;
+    background-color: #222222;
+}
+h2{
+    color: #ffffff;
+    background-color:#66b04c;
+}
+h3.HOWTOUSE{
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #007f00;
+}
+h3.ATTENTION{
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #827f00;
+}
+table.EXAMPLE{
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #111111;
+}
+div.scr {
+  overflow: scroll;
+  width: 350px;
+  height: 120px;
+  background-color: #111111;
+  border: 0.5pt color:#f9efdd;
+}
+h2.INFOMATION{
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #7f0000;
+}
+table.update {
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+}
+h3.CONTACT{
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #7f007f;
+}
+h2.ABOUT {
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #007f00;
+
+}
+h2.ENV {
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #827f00;
+}
+h2.source {
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #827f00;
+}
+h2.ongen {
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #827f00;
+}
+div.chui {
+    background-color: #777777;
+    color: #000000;
+}
+h2.niji {
+    color: #ffffff;
+    font-style: 'Rounded Mplus 1c', sans-serif;
+    background-color: #7f0000;
+}
+input[type="button"]#add{
+    width:160px;
+    height: 35px;
+    font-size:24px;
+    text-decoration:none;
+    display:inline;
+    text-align:center;
+    padding:auto;
+    color:#fff;
+    background-color:#ed3948;
+    border: 0px;
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-right:20px;
+    margin-left: 20px;
+}
+input[type="button"]#add:hover{
+    width:160px;
+    font-size:24px;
+    height: 35px;
+    text-decoration:none;
+    display:inline;
+    text-align:center;
+    padding:auto;
+    color:#fff;
+    background-color:#ff5362;
+    border: 0px;
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-right:20px;
+    margin-left: 20px;
+}
+
+input[type="button"]#announceStartButton{
+    width:130px;
+    height: 35px;
+    font-size:16px;
+    text-decoration:none;
+    display:inline;
+    text-align:center;
+    padding:auto;
+    color:#fff;
+    background-color:#ed3948;
+    border: 0px;
+    border-radius:10px;
+    margin: 10px
+}
+input[type="button"]#announceStartButton:hover{
+    width:130px;
+    height: 35px;
+    font-size:16px;
+    text-decoration:none;
+    display:inline;
+    text-align:center;
+    padding:auto;
+    color:#fff;
+    background-color:#ff5362;
+    border: 0px;
+    border-radius:10px;
+    margin: 10px
+}
+
+input[type="button"]#ResetButton{
+    width:100px;
+    height: 35px;
+    font-size:16px;
+    text-decoration:none;
+    display:inline;
+    text-align:center;
+    padding:auto;
+    color:#fff;
+    background-color:#ff7f00;
+    border: 0px;
+    border-radius:10px;
+    margin: 10px
+}
+input[type="button"]#ResetButton:hover{
+    width:100px;
+    height: 35px;
+    font-size:16px;
+    text-decoration:none;
+    display:inline;
+    text-align:center;
+    padding:auto;
+    color:#fff;
+    background-color:#f8b02a;
+    border: 0px;
+    border-radius:10px;
+    margin: 10px
+}
