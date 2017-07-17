@@ -1,3 +1,10 @@
+@font-face{
+    font-family: "mplus-1c-light";
+    src: url(font/mplus-1c-light.ttf);
+}
+
+.wf-roundedmplus1c { font-family: "Rounded-L Mplus 1c"; }
+
 * {
 -webkit-appearance: none;
 }
@@ -6,7 +13,6 @@ div.TITLE-BOARD {
     width: 1000px;
     height: 350px;
     background-color: #111111;
-    font-family: "Mplus 1p";
     margin: auto;
 }
 span.cubettl{
@@ -68,14 +74,6 @@ td.led:after{
     z-index:15;
 }
 
-table.MSGothic {
-    font-family: "Noto Sans Japanese",sans-serif; 
-}
-tr.MSGothic {
-    font-family: "Noto Sans Japanese",sans-serif; 
-}
-
-
 div.BOARD-CONTENTS {
     width: 800px;
     float: right;
@@ -127,7 +125,7 @@ div.MAIN {
     float: center;
     width: 1000px;
     height: 750px;
-    font-family: "mplus-1c-light";
+    font-family: "mplus-1c-light" ,sans-serif;
     /*background-color: #111111;*/
     padding: 5px;
     margin: auto;
@@ -135,7 +133,7 @@ div.MAIN {
 }
 
 div.category{
-    font-family: 'Rounded Mplus 1c';
+    font-family: 'mplus-1c-regular';
     float: left;
     padding: 3px;
 }
@@ -152,7 +150,7 @@ div.SELECT_SPACE {
 }
 div.SELECT_SPACE select{
     color: #000000;
-    font-family: 'mplus-1c-light';
+    font-family: "mplus-1c-light";
     background-color: #ffffff;
     border-color: #ffffff;
     margin: auto;
