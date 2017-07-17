@@ -3,6 +3,11 @@
     src: url(font/mplus-1c-light.ttf);
 }
 
+@font-face{
+    font-family: "mplus-1c-regular";
+    src: url(font/mplus-1c-regular.ttf);
+}
+
 .wf-roundedmplus1c { font-family: "Rounded-L Mplus 1c"; }
 
 * {
