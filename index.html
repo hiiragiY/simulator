@@ -6,111 +6,145 @@
         <meta name="author" content="" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
-        <title>Hiiragi_SIM 2.23</title>
+        <title>Hiiragi_SIM 2.40</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+        <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
         </style>
-        <script type="text/javascript" src="setting.js" charset="UTF-8"></script>
-        <script type="text/javascript" src="main.js" charset="UTF-8"></script>
-        <script type="text/javascript"></script>
+        <script type="text/javascript" src="js/setting.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
         <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="js/jquery.cookie.js"></script>
+        <script type="text/javascript" src="js/jquery.justify.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.justify').justify();
+            $('.justify-table th').justify();
+            });
+        </script>
     </head>
 
     <body>
         <div class="SITE_WIDTH">
-                <div class="BOARD-TOP">
-                </div>
-                <div class="HOMENUM">
-                    <img src="icoca.png" alt=""  width="180" height="180">
-                </div>
-                <div class="BOARD-CONTENTS">
+                <div electric-board>
+                    <div class="BOARD-TOP">
+                    </div>
+                    <div class="HOMENUM">
+                        <img src="icoca.png" alt=""  width="180" height="180">
+                    </div>
+                    <div class="BOARD-CONTENTS">
 
-                    <table border="0" bgcolor="#111111" cellpadding="5" Cellspacing="0" style="border:thick width:800px;height:30px;">
-                        <tr>
-                        <td width="1000px">
-                            <center>
-                            <p><font color="white" size="5pt"><span class="cubettl">&nbsp;Ａ&nbsp;</span> JR神戸線/JR京都線/琵琶湖線 自動放送シミュレーター<font size="3pt">(スマホ非対応)</font></font>
-                            <br />
-                            <font color="white" size="2pt">Hiiragi SIM on JR West, Lake Biwa Line, JR Kyoto Line, JR Kobe Line 2.23</font></p>
-                            </center>
-                        </td>
-                        </tr>
-                    </table>
-
-                    <table border="0" bgcolor="#111111" cellpadding="5" Cellspacing="0" style="font-family: "Noto Sans Japanese";border:thick width:800px;height:30px;">
-                        <tr>
-                                <td width="120px">
-                                    <font color="white"><center>種　　別<br /><font size="1">Type</font></center></font>
-                                </td>
-                                <td width="270px">
-                                    <font color="white"><center>列車名/乗車位置<br /><font size="1">Train Name / Boarding Position</font></center></font>
-                                </td>
-                                <td width="110px">
-                                    <font color="white"><center>時　　刻<br /><font size="1">Departure Time</font></center></font>
-                                </td>
-                                <td width="250px">
-                                    <font color="white"><center>行　　先<br /><font size="1">Destination</font></center></font>
-                                </td>
-                                <td width="250px">
-                                    <font color="white"><center>遅　　れ<br /><font size="1">Delay</font></center></font>
-                                </td>
-                        </tr>
-                        <tr bgcolor="#161616" class="SAWARABI">
-                                <td width="120px" class="led">
-                                    <font color="#377F0B" size="6"><span style="letter-spacing: -4px"><center><div id="output_type">普　通</div></center></span></font>
-                                </td>
-                                <td width="270px" class="led">
-                                    <font color="#377F0B" size="6px"><center><div id="output_ryousu" style="display: inline;">△1〜8</div></center></font>
-                                </td>
-                                <td width="110px" class="led">
-                                    <font color="#E68115" size="6"><center><div id="output_hour" style="display: inline;">0</div>:<div id="output_minute" style="display: inline;">23</div></center></font>
-                                </td>
-                                <td width="250px" class="led">    
-                                    </style><font color="#377F0B" size="6"><center>
-                                <div id="output_for">播磨新宮</div></center></font>
-                                </td>
-                                <td width="250px" class="led">
-                                    <font color="red" size="5"><center><span style="letter-spacing: -3px">遅れ約6分</span></center></font>
-                                </td>
-                        </tr>
-                    </table>
-
-                    <table class="SAWARABI" border="0" bgcolor="#161616" cellpadding="5" Cellspacing="0" style="border:thick width:800px;height:30px;">
-                        <tr>
-                            <td class="led">
-                            <center>
-                                <font size="5" color="#377F0B">
-                                <!-- 377F0B,E68115 -->
-                                <marquee width="780px" scrollamount="7" truespeed>☆☆☆2017/03/08 初版1.00公開(現在ver2.30) 音源はこれからも追加していきます(現在283種)☆☆☆</marquee>
-                                </font>
-                            </center>
+                        <table border="0" bgcolor="#111111" cellpadding="5" Cellspacing="0" style="border:thick width:800px;height:30px;">
+                            <tr>
+                            <td width="1000px">
+                                <center>
+                                <p><font color="white" size="5pt"><span class="cubettl">&nbsp;Ａ&nbsp;</span> JR神戸線/JR京都線/琵琶湖線 自動放送シミュレーター<font size="3pt">(スマホ非対応)</font></font>
+                                <br />
+                                <font color="white" size="2pt">Hiiragi SIM on JR West, Lake Biwa Line, JR Kyoto Line, JR Kobe Line 2.40</font></p>
+                                </center>
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="led">
-                            <center>
-                                <font size="5" color="#E68115">
-                                <!-- 377F0B,E68115 -->
-                                <marquee width="780px" scrollamount="6" truespeed>現在、♪予告メロディ @神戸線 の音源において不具合が発生しております。修正までしばらくおまちください。配色が無茶苦茶です。CSSはまた修正しますm(__)m ☆シミュレーターに関する情報はこちらで発信します☆</font></marquee>
-                                </font>
-                             </center>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </center>
+                            </tr>
+                        </table>
+
+                        <table class="justify-table" border="0" bgcolor="#111111" cellpadding="5" Cellspacing="0" style="font-family: Noto Sans Japanese; border:thick; width:800px; height:30px;">
+                            <tr>
+                                    <td width="100px">
+                                        <font color="white"><center>種　別<br /><font size="1">Type</font></center></font>
+                                    </td>
+                                    <td width="200px">
+                                        <font color="white"><center>列車名/乗車位置<br /><font size="1">Train Name / Boarding Position</font></center></font>
+                                    </td>
+                                    <td width="100px">
+                                        <font color="white"><center>時　刻<br /><font size="1">Departure Time</font></center></font>
+                                    </td>
+                                    <td width="200px">
+                                        <font color="white"><center>行　先<br /><font size="1">Destination</font></center></font>
+                                    </td>
+                                    <td width="200px">
+                                        <font color="white"><center>遅　れ<br /><font size="1">Delay</font></center></font>
+                                    </td>
+                            </tr>
+                            <tr bgcolor="#161616" class="MSGothic">
+                                    <td width="100px" class="led" height="12px">
+                                        <font color="#377F0B" size="6pt"><span style="letter-spacing: -4px"><center><div id="output_type">普　通</div></center></span></font>
+                                    </td>
+                                    <td width="200px" class="led" height="12px">
+                                        <font color="#377F0B" size="6pt"><center><div id="output_ryousu" style="display: inline;">△1〜8</div></center></font>
+                                    </td>
+                                    <td width="100px" class="led" height="12px">
+                                        <font color="#E68115" size="6pt"><center><div id="output_hour" style="display: inline;">8</div>:<div id="output_minute" style="display: inline;">11</div></center></font>
+                                    </td>
+                                    <td width="200px" class="led" height="12px">    
+                                        </style><font color="#377F0B" size="6pt"><center>
+                                    <div id="output_for">
+                                        <script type="text/javascript">
+                                            var station = new Array();
+                                            station[0] = '岡　山';
+                                            station[1] = '魚　住';
+                                            station[2] = 'さくら夙川';
+                                            station[3] = '御　着';
+                                            station[4] = '東加古川';
+                                            station[5] = '厄　神';
+                                            station[6] = '福　崎';
+                                            station[7] = '寺　前';
+                                            station[8] = '播磨新宮';
+                                            station[9] = '上　月';
+                                            station[10] = '宝　殿';
+                                            station[11] = '竜　野';
+                                            station[12] = '須　磨';
+                                            station[13] = '兵　庫';
+                                            station[14] = '六 甲 道';
+                                            station[15] = '手　柄';
+                                            var no = Math.floor(Math.random() * station.length);
+                                            document.getElementById("output_for").innerHTML = station[no];
+                                        </script>
+                                    </div></center></font>
+                                    </td>
+                                    <td width="200px" class="led" height="12px">
+                                        <font color="yellow" size="6pt"><center></center></font>
+                                    </td>
+                            </tr>
+                        </table>
+
+                        <table class="MSGothic" border="0" bgcolor="#161616" cellpadding="5" Cellspacing="0" style="border:thick width:800px;height:30px;">
+                            <tr>
+                                <td class="led">
+                                <center>
+                                    <font size="5" color="#377F0B">
+                                    <!-- 377F0B,E68115 -->
+                                    <marquee width="780px" scrollamount="6" truespeed></marquee>
+                                    </font>
+                                </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="led">
+                                <center>
+                                    <font size="5" color="#E68115">
+                                    <!-- 377F0B,E68115 -->
+                                    <marquee width="780px" scrollamount="6" truespeed>【バーション2.4】ブラウザのcookieを利用して放送文章を保存できるようになりました。</font></marquee>
+                                    </font>
+                                 </center>
+                                </td>
+                            </tr>
+                        </table>
+                        <center><font size="2px" color="#cccccc">時間・行き先・種別を選択することでページ上部の電光掲示板が更新されます。</font></center>
+                    </div>
+                </center>
+            </div>
 
             <div class="MAIN">
 
                 <div class="SELECT_SPACE">
-                    <div style="clear:both;">
-                        <center><font style='font-size: 20px; font-family: "Mplus 1p"; color: #ffffff'>音　源　一　覧</font><br /><font size="2px">ダブルクリックまたは追加ボタンで文節を追加します。</font></center>
-                        <br>
+
+                <h2 class="INFOMATION">音源一覧</h2>
+                    <div style="float:top;">
                         <!--=====時選択======================================-->
-                        <div style="float:left;">時<br />
-                            <select  size='8' id='partsListSelect_hour' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_hour();reload_hour()' ondblclick='setSoundParts_hour()' >
+                        <div class="category">時<br />
+                            <select  size='8' id='partsListSelect_hour' style='font-size:16px; width: 60px; height: 150px;' onChange='HowsetSoundParts_hour();reload_hour()' ondblclick='setSoundParts_hour()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_hour.length ; i++)
                                     {
@@ -120,8 +154,8 @@
                             </select>
                         </div>
                         <!--=====分選択======================================-->
-                        <div style="float:left;">分<br />
-                            <select class="SAWARABI" size='8' id='partsListSelect_minute' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_minute();reload_minute()' ondblclick='setSoundParts_minute()' >
+                        <div class="category">分<br />
+                            <select class="SAWARABI" size='8' id='partsListSelect_minute' style='font-size:16px; width: 70px; height: 150px;' onChange='HowsetSoundParts_minute();reload_minute()' ondblclick='setSoundParts_minute()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_minute.length ; i++)
                                     {
@@ -131,8 +165,8 @@
                             </select>
                         </div>
                         <!--=====行き先======================================-->
-                        <div style="float:left;">駅名(⤵)<br />
-                            <select class="SAWARABI" size='8' id='partsListSelect_and' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_and()' ondblclick='setSoundParts_and()' >
+                        <div class="category">経由地<br />
+                            <select class="SAWARABI" size='8' id='partsListSelect_and' style='font-size:16px; width: 100px; height: 150px;' onChange='HowsetSoundParts_and()' ondblclick='setSoundParts_and()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_and.length ; i++)
                                     {
@@ -142,8 +176,8 @@
                             </select>
                         </div>
                         <!--=====行き先======================================-->
-                        <div style="float:left;">駅名(⤴)<br />
-                            <select class="SAWARABI" size='8' id='partsListSelect_for' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_for();reload_for()' ondblclick='setSoundParts_for()' >
+                        <div class="category">行き先<br />
+                            <select class="SAWARABI" size='8' id='partsListSelect_for' style='font-size:16px; width: 100px; height: 150px;' onChange='HowsetSoundParts_for();reload_for()' ondblclick='setSoundParts_for()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_for.length ; i++)
                                     {
@@ -153,8 +187,8 @@
                             </select>
                         </div>
                         <!--=====メロディ======================================-->
-                        <div style="float:left;">♪チャイム・メロディ<br />
-                            <select class="SAWARABI" size='8' id='partsListSelect_melody' style='font-size:16px; width: 250px; height: 200px;' onChange='HowsetSoundParts_melody()' ondblclick='setSoundParts_melody()' >
+                        <div class="category">♪チャイム・メロディ<br />
+                            <select class="SAWARABI" size='8' id='partsListSelect_melody' style='font-size:16px; width: 250px; height: 150px;' onChange='HowsetSoundParts_melody()' ondblclick='setSoundParts_melody()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_melody.length ; i++)
                                     {
@@ -165,10 +199,10 @@
                         </div>
                     </div>
 
-                    <div style="clear:both;"><br />
-                        <!--=====無音地帯======================================-->
-                        <div style="float:left;">無音<br />
-                            <select class="SAWARABI" size='8' id='partsListSelect_silent' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_silent()' ondblclick='setSoundParts_silent()' >
+                    <div style="float: bottom;">
+                        <!--=====無音======================================-->
+                        <div class="category">無音(秒)<br />
+                            <select class="SAWARABI" size='8' id='partsListSelect_silent' style='font-size:16px; width: 60px; height: 150px;' onChange='HowsetSoundParts_silent()' ondblclick='setSoundParts_silent()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_silent.length ; i++)
                                     {
@@ -178,8 +212,8 @@
                             </select>
                         </div>
                         <!--=====種別======================================-->
-                        <div style="float:left;">種別<br /> <!-- （特急・号車番号) -->
-                        <select class="SAWARABI" size='8' id='partsListSelect_type' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_type();reload_type()' ondblclick='setSoundParts_type()' >
+                        <div class="category">種別・号車<br /> <!-- （特急・号車番号) -->
+                        <select class="SAWARABI" size='8' id='partsListSelect_type' style='font-size:16px; width: 100px; height: 150px;' onChange='HowsetSoundParts_type();reload_type()' ondblclick='setSoundParts_type()' >
                         <script type="text/javascript">
                         for(i=0 ; i<soundData_type.length ; i++)
                         {
@@ -189,8 +223,8 @@
                         </select>
                         </div>
                         <!--=====編成両数======================================-->
-                        <div style="float:left;">編成両数<br /> <!-- (接続詞に注意) -->
-                            <select class="SAWARABI" size='8' id='partsListSelect_ryousu' style='font-size:16px; width: 100px; height: 200px;' onChange='HowsetSoundParts_ryousu();reload_ryousu()' ondblclick='setSoundParts_ryousu()' >
+                        <div class="category"">編成両数<br /> <!-- (接続詞に注意) -->
+                            <select class="SAWARABI" size='8' id='partsListSelect_ryousu' style='font-size:16px; width: 100px; height: 150px;' onChange='HowsetSoundParts_ryousu();reload_ryousu()' ondblclick='setSoundParts_ryousu()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_ryousu.length ; i++)
                                     {
@@ -200,8 +234,8 @@
                             </select>
                         </div>
                         <!--=====一般======================================-->
-                        <div style="float:left;">その他放送<br />
-                            <select class="SAWARABI" size="8" id='partsListSelect' style='font-size:16px; width: 350px; height: 200px;' onChange='HowsetSoundParts()' ondblclick='setSoundParts()' >
+                        <div class="category"">その他放送<br />
+                            <select class="SAWARABI" size="8" id='partsListSelect' style='font-size:16px; width: 320px; height: 150px;' onChange='HowsetSoundParts()' ondblclick='setSoundParts()' >
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData.length ; i++)
                                     {
@@ -210,101 +244,145 @@
                                 </script>
                             </select>
                         </div>
-                        <div style="clear:both; text-align: center;">
-                        <input type="button" id="add" value="追　加" onclick="whichadd()" style='font-size:16px;' />
-                        <input type="button" id="add" value="試 聴 / 行き先更新" onclick="testplay_sound()" style='font-size:16px;' />
+                        <div style="text-align: center;">
+                        <input type="button" id="add" value="追加" onclick="whichadd()" style='font-size:16px;' />
+                        <input type="button" id="add" value="試聴" onclick="testplay_sound()" style='font-size:16px;' />
                         </div>
+                        <font size="2px">※ダブルクリックまたは追加ボタンで文節を追加します。</font>
                     </div>
                 </div>
+
                 <div class="WORKSPACE">
-                    <center><font style='font-size: 20px; font-family: "Mplus 1p"; color: #ffffff'>放　送　文　章</font><br /><font size="2px">環境によっては再生に少々時間を要すことがあります。</font></center>
-                    <br />
-                    <br />
-                    <textarea id="inputTextarea" style='font-size:16px; width: 350px; height: 440px;' ></textarea>
-                    <audio id="audio0" src="sound/null-250.mp3" height='0'></audio>
-                    <div style="clear:both; text-align: center;">
-                    <input type="button" id="announceStartButton" value="自動放送開始" onclick="checkInput()" />
-                    <input type="button" id="ResetButton" value="リセット" onclick="resetInput()"/>
-                    </div>
+                <h2 class="INFOMATION">放送文章</h2>
                     <script type="text/javascript">
-                        main();
-                    </script>
-                    <div id="log"></div>
+                        $(function(){
+                        if ($.cookie("inputTextarea")){
+                            $('#inputTextarea').val($.cookie("inputTextarea"));  
+                        }
+                        //クッキーを保存  
+                        $("#SaveButton").click(function(){  
+                            $.cookie("inputTextarea",$('#inputTextarea').val());  
+                            })  
+                        })  
+                    </script> 
+
+<textarea id="inputTextarea" style='font-size:16px; width: 340px; height: 350px; border-color: #ffffff'>
+♪神戸線チャイム
+まもなく
+7番乗り場に
+0時
+11分発
+姫路方面
+播州赤穂(行き)
+（時刻・行き先）行きが
+8両で
+まいります（⤵）
+(1.0s)
+危ないですから
+黄色い点字ブロックまで
+お下がりください
+(0.75s)
+7番乗り場に
+電車が
+まいります（⤵）
+ご注意ください
+(0.5s)
+♪神戸線接近メロディ
+♪神戸線接近メロディ
+♪神戸線接近メロディ
+</textarea>
+                    <audio id="audio0" src="sound/null-250.mp3" height='0'></audio>
+                    <div class="buttons">
+                    <div>
+                    <input type="button" id="announceStartButton" value="放送開始" onclick="checkInput()" />
+                    <input type="button" id="ResetButton" value="Reset" onclick="resetInput()"/>
+                    <input type="submit" id="SaveButton" value="保存"/>
+                    </div>
+                    <font size="2px">※環境によっては再生に少々時間を要すことがあります。</font>
+                </div>
                 </div>
             </div>
 
             <div class="EXPRENATION">
-                <h3 class="HOWTOUSE">使い方 &lt;How To Use&gt;</h3>
+
+            <h2 class="INFOMATION">更新情報</h2>
+                <div class="update">
+                    <table class="update">
+                        <tr>
+                            <td width="120px">2017/07/17</td>
+                            <td width="250px">[アップデート ver2.4]</td>
+                            <td>サイトのレイアウトを更新＆一部の音源が再生されない問題を修正。<br>放送文章をcookieによって保存できるようになりました。<br>時間・行き先・種別を選択することでページ上部の電光掲示板に反映されるようになりました。</td>
+                        </tr>
+                        <tr>
+                            <td>2017/05/15</td>
+                            <td>[修正アップデート ver2.3]</td>
+                            <td>電光掲示板風レイアウトに変更＆一部の音源が再生されない問題を修正。</td>
+                        </tr>
+                        <tr>
+                            <td>2017/04/XX</td>
+                            <td>[修正アップデート ver2.23]</td>
+                            <td>CSSの修正</td>
+                        </tr>
+                        <tr>
+                            <td>2017/03/30</td>
+                            <td>[アップデート ver2.22]</td>
+                            <td>音源2種(通過等)を追加し、現在283種の音源が使用できます。</td>
+                        </tr>
+                        <tr>
+                            <td>2017/03/17</td>
+                            <td>[アップデート ver2.21]</td>
+                            <td>各音源を、種類別に選択・視聴できるようになりました。</td>
+                        </tr>
+                        <tr>
+                            <td>2017/03/11</td>
+                            <td>[アップデート ver1.21]</td>
+                            <td>音質改良・50種の音源を追加し、現在281種の音源が使用できます。</td>
+                        </tr>
+                        <tr>
+                            <td>2017/03/10</td>
+                            <td>[修正アップデート ver1.11]</td>
+                            <td>一部の音源が再生されない問題を修正</td>
+                        </tr>
+                        <tr>
+                            <td>2017/03/10</td>
+                            <td>[アップデート ver1.10</td>
+                            <td>音質改良・72種の音源を追加し、現在231種の音源が使用できます。</td>
+                        </tr>
+                        <tr>
+                            <td>2017/03/08</td>
+                            <td>[シミュレータ公開]</td>
+                            <td>JR神戸線/JR京都線/琵琶湖線 自動放送シミュレーター（スマホ非対応）ver1.00を公開しました。159種の音源が使用できます。</td>
+                        </tr>
+                    </table>
+                </div>
+                <h3 class="ATTENTION">使用方法</h3>
                 <ul>
-                    <li>左側のセレクトボックス内の選択肢から分節を選択し、<font color="#9460a0">ダブルクリックまたは追加ボタンで文節を追加</font>します。文章を組み上げた後は、放送開始ボタンを押すと、自動放送が開始します。
+                    <li>デフォルトで登録されている放送文章はリセットボタンで削除することができます。</li>
+                    <li>左側のセレクトボックス内の選択肢から分節を選択（各音源は【試聴】可能）し、ダブルクリックまたは追加ボタンで文節を追加します。文章を組み上げた後は、放送開始ボタンを押すと自動放送が開始します。
                     </li>
-                    <li>文節の順番を入れ替えたい場合は、右側のテキストボックスを行単位で選択し、カット＆ペーストで移動してください。行中の文字列を変更すると正しく再生されません。</li>
-                    <li>右側のテキストボックスの内容を別途保存しておき、次回読み込み時に右側のテキストボックスに貼り付け、組立作業を途中から再開することもできます。</li>
+                    <li>放送文章は手書きすることも可能ですが、右の選択エリアの文節に文字列を合わせる必要があります。</li>
+                    <li>【保存】ボタンでブラウザを閉じても文章は保存されます（バーション2.40より）。</li>
+                    <li><u>時間・行き先・種別を選択することでページ上部の電光掲示板が更新されます。</u>行き先のデフォルト値はランダムです。</li>
                 </ul>
-                <h3 class="ATTENTION">注意事項 &lt;ATTENTION!!&gt;</h3>
+                <h3 class="ATTENTION">注意事項</h3>
                 <ul>
-                    <li>お使いのバージョンは最新版(2.30)です。不具合等ございましたら、ご連絡いただければ幸いです。</li>
-                    <li><u>このバージョンでは各音源を試聴することができます。</u></li>
-                    <li>駅名の音源には2種類あります(イントネーションが違います)。「駅名(行き先)」は行き先を放送するときに使用し、「駅名（⤵）」は「「駅名（⤵）」から快速」や、経由駅の案内に使用してください。「まいります」にも同様の区別があります。</li>
-                    <li>以下に<font color="red">放送の例(架空)</font>を示します。よくわからない方はどれかをコピペして使ってみてください。
-                    <br>
-                        <table class="EXAMPLE">
-                            <tr>
-                                <td>
-                                    <center><font style="font-size: 110%;">☆☆☆<font color="red">特急</font>スーパーはくと東京行き☆☆☆<br>※120分遅れ</font><br></center>
-                                    <div class="scr">
-                                        <center>運転見合わせ中（編集中）</center>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    <li><font color="red">chromeでは音声間の無音時間が短く、より現実に近い放送を聞けました。</font></li>
+                    <li>不具合等ございましたら、ご連絡いただければ幸いです。</li>
+                    <li>駅名に関する音源にはイントネーションが異なる2種類の音源があります。「行き先」は行先を放送するときに使用し、「経由地」は「（駅名）から快速」などのように、主として経由駅の案内に使用します。「まいります」にも同様の区別があります。</li>
+                    <li>ブラウザによって、音声間の時間が異なります。（例えば、safariよりChromeの方がより現実に近い間隔です）
                 </ul>
-                <h2 class="INFOMATION">更新情報 &lt;Update&gt;</h2>
-                <table class="update">
-                    <tr>
-                        <td>2017/05/15</td>
-                        <td>[修正アップデート ver2.3]電光掲示板風レイアウトに変更＆一部の音源が再生されない問題を修正。</td>
-                    </tr>
-                    <tr>
-                        <td>2017/04/XX</td>
-                        <td>[軽微な修正 ver2.23]CSSの修正</td>
-                    </tr>
-                    <tr>
-                        <td>2017/03/30</td>
-                        <td>[アップデート ver2.22]音源2種(通過等)を追加し、現在283種の音源が使用できます。</td>
-                    </tr>
-                    <tr>
-                        <td>2017/03/17</td>
-                        <td>[アップデート ver2.21]各音源を、種類別に選択・視聴できるようになりました。</td>
-                    </tr>
-                    <tr>
-                        <td>2017/03/11</td>
-                        <td>[アップデート ver1.21]音質改良・50種の音源を追加し、現在281種の音源が使用できます。</td>
-                    </tr>
-                    <tr>
-                        <td>2017/03/10</td>
-                        <td>[軽微な修正 ver1.11]一部の音源が再生されない問題を修正</td>
-                    </tr>
-                    <tr>
-                        <td>2017/03/10</td>
-                        <td>[アップデート ver1.10]音質改良・72種の音源を追加し、現在231種の音源が使用できます。</td>
-                    </tr>
-                    <tr>
-                        <td>2017/03/08</td>
-                        <td>JR神戸線/JR京都線/琵琶湖線 自動放送シミュレーター（スマホ非対応）ver1.00を公開しました。159種の音源が使用できます。</td>
-                    </tr>
-                </table>
-                <h3 class="CONTACT">連絡先 &lt;Contact&gt;: 不具合報告やリクエストはこちらからどうぞ</h3>
+                <h2 class="INFOMATION">連絡先</h2>
+                不具合報告やリクエストはこちらからお願いします。
                 <ul>
-                    <li><a href="https://hiiragiy.github.io/hiiragi.io/" target="_brank">Home Page</a></li>
+                    <li><a href="https://hiiragiy.github.io/hiiragi.io/" target="_brank">Home Page</a>（左上PROFILEにメルアドを載せています）</li>
                     <li><a href="https://twitter.com/hiiragiy99" target="_blank">Twitter</a>(@ツイートしてください)</li>
                 </ul>
-                <h2 class="ABOUT">このシミュレーターについて &lt;About&gt;</h2>
-                <p>JR神戸線・JR京都線・琵琶湖線の運行管理システム内各駅で使用されている駅自動放送を自由に組み立て、自動放送を流すシミュレーターです。<font color="green">上記路線以外の音源も含まれております。</font><br>素材は今後も増やしていきます。北陸本線についても再現したいと考えています。<font color="green">リクエスト</font>等がございましたら、上の連絡先までお知らせください（お待ちしています！...がすべてのリクエストにお応えできないことがあります、ご了承ください、録音しに行く場合は多忙につき遅くなることもあります）。</p> 
-                <h2 class="ENV">動作環境について &lt;Recommended System Requirements&gt;</h2>
+                製作者: ひいらぎ
+                <h2 class="ongen">このシミュレーターについて</h2>
+                <p>JR神戸線・JR京都線・琵琶湖線の運行管理システム内各駅で使用されている駅自動放送を自由に組み立て自動放送を流すシミュレーターです。上記路線以外の音源も含まれております。</p>
+                <p>音源は随時追加していきます。北陸本線についても再現できればと思います。</p> 
+                <h2 class="ongen">動作環境について</h2>
                 <ul>
-                    <li>本バージョンより、音源の視聴が可能となりました。視聴については、スマートフォンでも動作します。また、上に示した放送例の音源もスマートフォンでお聞きいただけます。(動作はiOS10にて確認済み Androidでは確認しておりません)</li>
+                    <li>本バージョンより、音源の視聴が可能となりました（視聴については、スマートフォンでも動作します）。
                     <li><p>以下3点、プログラム開発者であるyoshi223様のサイトより引用させていただきます。</p>
                         <ul>
                             <li>お使いの端末やOS、ブラウザによっては正しく動作しない可能性があります。なるべくパソコン(WindowsやMac)のGoogle Chromeをご利用ください。その他のOS・ブラウザからは正常に動作しない可能性があります。またパソコン以外の端末(スマートフォン)も正しく動作しない可能性が高いです。</li>
@@ -312,31 +390,30 @@
                             <li>動作確認は MacBookのGoogle Chrome バージョン 49.0.2623.112 で行なっています。他のOS・ブラウザではレイアウトや挙動が異なったり、エラーで正常に動作しない場合があります。</li>
                         </ul>
                     </li>
-                    <li><p>また、私の環境[MacBook Pro:safariバージョン10.0.3 (12602.4.8)]では問題なく動作していますが<font color="red">Chromeは音声間の無音時間が短く、より現実に近い放送を聞けました。</font></p></li>
                 </ul>
-                <h2 class="source">プログラム配布元</h2>
+                <h2 class="INFOMATION">プログラム配布元</h2>
                 <p>このシミュレーターは、下記一般公開/配布されている自動放送シミュレーターのプログラムから作成しました。音楽ファイルを連結させて自動放送を行うというアイデアとその実装へのご尽力に心より敬意を表します。</p>
-                <p>yoshi223様</p>
-                <a class="yoshi223" href="http://r113.web.fc2.com/p/announce/jrw-osaka-loop/index.html" target="_blank">http://r113.web.fc2.com/p/announce/jrw-osaka-loop/index.html</a>
-                <h2 class="ongen">音源について</h2>
-                <p>このシュミレータを作成するにあたって、以下の方々に音源の提供をご快諾頂きました。この場でお礼申し上げます。ありがとうございます。</p>
+                <a class="yoshi223" href="http://r113.web.fc2.com/p/announce/jrw-osaka-loop/index.html" target="_blank">大阪環状線 駅自動放送シミュレーター(スマホ非対応)</a>
+                <h4>yoshi223様</h4>
                 <ul>
-                    <li>やたてつ！様</li>
-                    <ul style="list-style-type: circle;">
-                        <li><a href="https://twitter.com/yyyy_yatatetsu" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.youtube.com/playlist?list=PLpkTgxvE15kqYbZSCODnVep_aSoBCEcUf" target="_blank">YouTube</a></li>
-                        <li><a href="http://blogs.yahoo.co.jp/haruki1127sport" target="_blank">Blog</a></li>
-                    </ul>
+                <li><a class="yoshi223" href="http://r113.web.fc2.com/index.htm" target="_blank">yoshi223の鉄道館</a></li>
+                <li><a class="yoshi223" href="https://twitter.com/rk113" target="_blank">Twitter</a></li>
                 </ul>
-                <p>また、以上の方々にご提供いただいた音源の他に私が録音したものも一部含まれています。</p>
+                
+                <h2 class="ongen">音源について</h2>
+                <p>このシュミレータを作成するにあたって、やたてつ様（<a href="https://twitter.com/yyyy_yatatetsu" target="_blank">Twitter</a>・
+                <a href="https://www.youtube.com/playlist?list=PLpkTgxvE15kqYbZSCODnVep_aSoBCEcUf" target="_blank">YouTube</a>・
+                <a href="http://blogs.yahoo.co.jp/haruki1127sport" target="_blank">Blog</a>）に音源の提供をご快諾頂きました。お礼申し上げます。ありがとうございます。</p>
+                <p>以上の方々にご提供いただいた音源の他に私が録音したものも一部含まれています。</p>
                 <div class="chui">
-                    <h2 class="niji">二次利用について</h2>
-                    <p>このプログラムは<font color="red">音源ではなく、「自動放送のシステム」</font>を公開しております。つきましてはこのシミュレーターで作成した放送を二次利用するにあたって、以下の制限を設けさせていただきます。</p>
+                    <h2 class="INFOMATION">二次利用について</h2>
+                    <p>このサイトでは音源ではなく、<font color="red">「自動放送のシステム」</font>を公開しております。つきましてはこのシミュレーターで作成した放送を二次利用するにあたって、以下の制限を設けさせていただきます。</p>
                     <ul>
-                        <li>前項の通り、このシステムに使用している音源はたくさんの方から提供頂いたものですから、<font color="red">音源ファイル自体を保存したり、加工したり、それらを公開しないこと。</font></li>
-                        <li>公開先にこのシミュレーターのURL(https://hiiragiy.github.io/hiiragi.io/contents/announce/index.html)を記載すること。</li>
-                        <li>作成した放送で利益を得ないこと（YouTube等の動画サイトにおいて公開される場合は特に注意）</li>
+                        <li>このシステムに使用している音源はご協力いただいた方からご提供頂いたものが含まれていますから、<font color="red">音源ファイル自体を保存したり、加工したり、それらを公開しないこと。</font></li>
+                        <li>公開先にこのシミュレーターのURL<b>(https://hiiragiy.github.io/hiiragi.io/contents/announce/index.html)</b>を記載すること。</li>
+                        <li>作成した放送で利益を得ないこと</li>
                     </ul>  
+                    以上、よろしくお願いします。
                 </div>
                 <div class="homelink">
                     <center>
