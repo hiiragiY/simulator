@@ -87,6 +87,10 @@ function reload_for() {
 	var index = document.getElementById(id).selectedIndex;
     var index_for = soundData_for[index][1].substring(0,soundData_for[index][1].indexOf("("));
     document.getElementById("output_for").textContent = index_for;
+
+    if(soundData_for[index][1] == '土　山(行)'){
+    	document.getElementById("output_for").innerHTML = "<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">神戸<span class=\"transform\" style=\" font-size: 50%; letter-spacing: 0px; \">方面</span></span>土 山</font>";
+    }
 }
 function reload_ryousu() {
 	var id = "partsListSelect_ryousu";
@@ -109,6 +113,12 @@ function reload_ryousu() {
     if(index == 5){
         document.getElementById("output_ryousu").innerHTML = "△1〜8";
     }
+    if(index == 6){
+        document.getElementById("output_ryousu").innerHTML = "△1〜9";
+    }
+    if(index == 7){
+        document.getElementById("output_ryousu").innerHTML = "△1〜12";
+    }
 }
 function reload_type() {
 	var id = "partsListSelect_type";
@@ -125,15 +135,15 @@ function reload_type() {
     }
     if(index == 5){
     	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
-    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -6px\">ｽｰﾊﾟｰ<div class=\"text-narrow\">はくと</div>5号</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -3px\">ｽｰﾊﾟｰ<span class=\"transform\">はくと</span>５号</font>";
     }
     if(index == 6){
     	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
-    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -6px\">ﾋﾞｸﾄﾘｰ<div class=\"text-narrow\">はくと</div>号</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -2px\">ﾋﾞｸﾄﾘｰ<div class=\"text-narrow\">はくと</div>号</font>";
     }
     if(index == 7){
     	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
-    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -4px\">びわこｴｸｽﾌﾟﾚｽ</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: 0px\">びわこｴｸｽﾌﾟﾚｽ</font>";
     }
     if(index == 8){
     	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
@@ -141,23 +151,28 @@ function reload_type() {
     }
     if(index == 9){
     	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
-    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -4px\">ｻﾝﾀﾞｰﾊﾞｰﾄﾞ5号</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -2px\">ｻﾝﾀﾞｰﾊﾞｰﾄﾞ５号</font>";
     }
     if(index == 10){
     	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
-    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -4px\">くろしお５号</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: 0px\">くろしお５号</font>";
     }
     if(index == 11){
     	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
-    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -4px\">ひ　だ ５号</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: 0px\">ひ　だ ５号</font>";
     }
     if(index == 12){
     	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
-    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -6px\">サンライズ瀬戸</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -2px\">サンライズ瀬戸</font>";
     }
     if(index == 13){
     	document.getElementById("output_type").innerHTML = "<font color=\"red\">" + "特　急"+ "</font>";
-    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: -1px\">ﾄﾜｲﾗｲﾄｴｸｽﾌﾟﾚｽ</font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#E68115\" style=\"letter-spacing: 0px\">ﾄﾜｲﾗｲﾄｴｸｽﾌﾟﾚｽ</font>";
+    }
+    if(index == 14){
+    	document.getElementById("output_type").innerHTML = "<font face=\"Dosis\" color=\"#f0ee38\"><span style=\" font-size: 60%; letter-spacing: 0px; line-height: 90%;\">TWILIGHT　 <br> 　EXPRESS</span></font>";
+    	document.getElementById("output_ryousu").innerHTML = "<font color=\"#377F0B\" face=\"Sawarabi Mincho\" style=\"letter-spacing: 0px\">瑞　風</font>";
+    	document.getElementById("output_for").innerHTML = "<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">山陽線<span style=\" font-size: 65%; letter-spacing: 0px; \">経由</span>下関</font>";
     }
 
 	

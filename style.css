@@ -8,10 +8,26 @@
     src: url(font/mplus-1c-regular.ttf);
 }
 
+/*font-family: 'Dosis', sans-serif;　とりあえず瑞風*/
+
 .wf-roundedmplus1c { font-family: "Rounded-L Mplus 1c"; }
 
 * {
 -webkit-appearance: none;
+}
+
+span.transform{
+    display: inline-block; 
+    transform: scale(0.8,1);
+    margin: 0px;
+    padding: 0px;
+}
+
+span.transform_min{
+    display: inline-block; 
+    transform: scale(0.6,1);
+    margin: 0px;
+    padding: 0px;
 }
 
 div.TITLE-BOARD {
@@ -157,7 +173,7 @@ div.SELECT_SPACE select{
     color: #000000;
     font-family: "mplus-1c-light";
     background-color: #ffffff;
-    border-color: #ffffff;
+    border-color: #cccccc;
     margin: auto;
     padding: auto;
 }

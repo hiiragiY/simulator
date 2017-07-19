@@ -21,7 +21,7 @@ soundData =
 
   ["sound/densyaga.mp3", "電車が"],
   ["sound/ressyaga.mp3", "列車が"],
-  ["sound/tsuukashimasu.mp3", "通過します"],
+  ["sound/tsuukashimasu.mp3", "通過します"],
 
   ["sound/touekidomarinoressyadesu.mp3", "当駅止まりの列車です"],
   ["sound/onorininaranaiyouninegaimasu.mp3", "お乗りにならないように願います"],
@@ -151,7 +151,7 @@ soundData =
   ["sound/touekidomariga.mp3", "当駅止まりが"],
 
   ["sound/ga_mairimasu.mp3", "まいります（⤵）"],
-  ["sound/tsuukashimasu.mp3", "通過します"],
+  ["sound/tsuukashimasu.mp3", "通過します"],
 
   ["sound/abunaidesukara.mp3", "危ないですから"],
   ["sound/kiiroitenjiburrokmade.mp3", "黄色い点字ブロックまで"],
@@ -160,7 +160,7 @@ soundData =
   ["sound/densyaga.mp3", "電車が"],
   ["sound/ressyaga.mp3", "列車が"],
   ["sound/ga_mairimasu.mp3", "まいります（⤵）"],
-  ["sound/tsuukashimasu.mp3", "通過します"],
+  ["sound/tsuukashimasu.mp3", "通過します"],
   
 
   ["sound/gochuikudasai.mp3", "ご注意ください"],
@@ -253,7 +253,7 @@ soundData =
   ["sound/31hun-hatsu.mp3", "31分発"],
   ["sound/34hun-hatsu.mp3", "34分発"],
   ["sound/37hun-hatsu.mp3", "37分発"],
-  ["sound/43hun-hatsu.mp3", "43分発"],
+  ["sound/37hun-hatsu.mp3", "43分発"],
   ["sound/54hun-hatsu.mp3", "54分発"],
   ["sound/56hun-hatsu.mp3", "56分発"],
   ["sound/59hun-hatsu.mp3", "59分発"],
@@ -262,12 +262,15 @@ soundData =
  ]
  soundData_for=
   [
+   ["sound/JRtouzaisenkeiyu.mp3", "JR東西線経由"],
+   ["sound/koseisen-keiyu.mp3", "湖西線経由"],
+   ["sound/sanyousen-keiyu.mp3", "山陽線経由"],
    ["sound/himeji-homen.mp3", "姫路方面"],
    ["sound/kobe-homen.mp3", "神戸方面"],
    ["sound/kyoto-homen.mp3", "京都方面"],
    ["sound/maibara-homen.mp3", "米原方面"],
-   ["sound/joyo-yukiha.mp3", "城　陽(行は)"],
-   ["sound/sonobe-yukiha.mp3", "園　部(行は)"],
+   ["sound/joyo-yukiha.mp3", "城　陽(行)"],
+   ["sound/sonobe-yukiha.mp3", "園　部(行)"],
    ["sound/sappro.mp3", "札　幌(行)"],
    ["sound/tokyo-yukiha.mp3", "東　京(行)"],
    ["sound/takayama_yukiha.mp3", "高　山(行)"],
@@ -276,7 +279,7 @@ soundData =
    ["sound/nagahama_yukiha.mp3", "長　浜(行)"],
    ["sound/maibara_yukiha.mp3", "米　原(行)"],
    ["sound/yasu_yukiha.mp3", "野　洲(行)"],
-   ["sound/kusatu_yukiha.mp3", "草　津(行)"],
+   ["sound/kusatu_yukiha.mp3", "草　津(行き)"],
    ["sound/oumiimazu_yukiha.mp3", "近江今津(行)"],
    ["sound/oumimaiko_yukiha.mp3", "近江舞子(行)"],
    ["sound/goma-yukiha.mp3", "胡　麻(行)"],
@@ -289,10 +292,11 @@ soundData =
    ["sound/nishiakashi_yukiha.mp3", "西 明 石(行)"],
    ["sound/tsuchiyama_yukiha.mp3", "土　山(行)"],
    ["sound/kakogawa_yukiha.mp3", "加 古 川(行)"],
-   ["sound/himeji_yukiha.mp3", "姫　路(行き)"],
+   ["sound/himeji_yukiha.mp3", "姫　路(行)"],
    ["sound/banshu-ako_yukiha.mp3", "播州赤穂(行)"],
    ["sound/kamigoori_yukiha.mp3", "上　郡(行)"],
    ["sound/kurayosi_yukiha.mp3", "倉　吉(行)"],
+   ["sound/shimonoseki_yukiha.mp3", "下　関(行)"],
   ["sound/yukiha.mp3", "行きは"],
    ["sound/null-250.mp3", ""] //この最後の行は編集しないでください
  ]
@@ -382,10 +386,12 @@ soundData_type=
   ["sound/hida.mp3", "ひだ"],
   ["sound/sunrise-seto-go.mp3", "サンライズ瀬戸号"],
   ["sound/towirightexpressgou.mp3", "トワイライトエクスプレス号"],
+  ["sound/mizukaze.mp3", "瑞風"],
 
   ["sound/JRtouzaisenkeiyu.mp3", "JR東西線経由"],
   ["sound/koseisen.mp3", "湖西線"],
   ["sound/koseisen-keiyu.mp3", "湖西線経由"],
+  ["sound/sanyousen-keiyu.mp3", "山陽線経由"],
   ["sound/biwakosen.mp3", "琵琶湖線"],
   ["sound/2gou.mp3", "2号"],
   ["sound/10gou.mp3", "10号"],

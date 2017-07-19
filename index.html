@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
         <!-- <link href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css" rel="stylesheet" > -->
         <title>Hiiragi_SIM 2.40</title>
         <script type="text/javascript" src="js/setting.js" charset="UTF-8"></script>
@@ -52,60 +54,98 @@
                                     <td width="100px">
                                         <font color="white"><center>種　別<br /><font size="1">Type</font></center></font>
                                     </td>
-                                    <td width="200px">
+                                    <td width="250px">
                                         <font color="white"><center>列車名/乗車位置<br /><font size="1">Train Name / Boarding Position</font></center></font>
                                     </td>
                                     <td width="100px">
                                         <font color="white"><center>時　刻<br /><font size="1">Departure Time</font></center></font>
                                     </td>
-                                    <td width="200px">
+                                    <td width="230px">
                                         <font color="white"><center>行　先<br /><font size="1">Destination</font></center></font>
                                     </td>
-                                    <td width="200px">
+                                    <td width="170px">
                                         <font color="white"><center>遅　れ<br /><font size="1">Delay</font></center></font>
                                     </td>
                             </tr>
                             <tr bgcolor="#161616" class="MSGothic">
                                     <td width="100px" class="led" height="12px">
-                                        <font color="#377F0B" size="6pt"><span style="letter-spacing: -4px"><center><div id="output_type">普　通</div></center></span></font>
+                                        <font color="#377F0B" size="6pt"><span style="letter-spacing: -3px;"><center><div id="output_type">普　通</div></center></span></font>
                                     </td>
                                     <td width="200px" class="led" height="12px">
-                                        <font color="#377F0B" size="6pt"><center><div id="output_ryousu" style="display: inline;">△1〜8</div></center></font>
+                                        <font color="#377F0B" size="6pt"><center><div id="output_ryousu">△1〜8</div></center></font>
                                     </td>
                                     <td width="100px" class="led" height="12px">
-                                        <font color="#E68115" size="6pt"><center><div id="output_hour" style="display: inline;">8</div>:<div id="output_minute" style="display: inline;">11</div></center></font>
+                                        <font color="#E68115" size="6pt"><span id="depature_time"><center><div id="output_hour" style="display: inline;">8</div>:<div id="output_minute" style="display: inline;">11</div></center></span></font>
                                     </td>
-                                    <td width="200px" class="led" height="12px">    
-                                        </style><font color="#377F0B" size="6pt"><center>
-                                    <div id="output_for">
-                                        <script type="text/javascript">
-                                            var station = new Array();
-                                            station[0] = '岡　山';
-                                            station[1] = '魚　住';
-                                            station[2] = 'さくら夙川';
-                                            station[3] = '御　着';
-                                            station[4] = '東加古川';
-                                            station[5] = '厄　神';
-                                            station[6] = '福　崎';
-                                            station[7] = '寺　前';
-                                            station[8] = '播磨新宮';
-                                            station[9] = '上　月';
-                                            station[10] = '宝　殿';
-                                            station[11] = '竜　野';
-                                            station[12] = '須　磨';
-                                            station[13] = '兵　庫';
-                                            station[14] = '六 甲 道';
-                                            station[15] = '手　柄';
-                                            var no = Math.floor(Math.random() * station.length);
-                                            document.getElementById("output_for").innerHTML = station[no];
-                                        </script>
-                                    </div></center></font>
+                                    <td width="230px" class="led" height="12px">    
+                                        <font color="#377F0B" size="6pt"><center>
+                                        <div id="output_for">
+                                        <span id="keiyu"></span>
+                                        <span id="dest"></span>
+                                        </div>
+                                        </center>
+                                        </font>
                                     </td>
-                                    <td width="200px" class="led" height="12px">
-                                        <font color="yellow" size="6pt"><center></center></font>
+                                    <td width="170px" class="led" height="12px">
+                                        <center><div id="output_delay" style="display: inline;"></div></center>
                                     </td>
                             </tr>
                         </table>
+                        <script type="text/javascript">
+
+                                            var station = new Array();
+                                            station[0] = '備中高梁';
+                                            station[1] = '魚　住';
+                                            station[2] = '鷹　取';
+                                            station[3] = '島　本';
+                                            station[4] = '東加古川';
+                                            station[5] = '東 姫 路';
+                                            station[6] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">名古屋</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>岡 崎</font>';
+                                            station[7] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">岡山</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>三 原</font>';
+                                            station[8] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">米原</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>大 垣</font>';
+                                            station[9] = '手　柄';
+                                            station[10] = '比叡山坂本';
+
+                                            var no = Math.floor(Math.random() * station.length);
+                                            document.getElementById("output_for").innerHTML = station[no];
+
+                                            var type = new Array();
+
+                                            type[0] = '普　通';
+                                            type[1] = '<font color=\"#E68115\">貨　物</font>';
+                                            type[2] = '<font color=\"#E68115\">快　速</font>';
+                                            type[3] = '<font color=\"red\">新快速</font>';
+                                            type[4] = '<font color=\"red\">臨　時</font>';
+                                            type[5] = '団　体';
+                                            type[6] = '<font color=\"#E68115\">回　送</font>';
+                                            type[7] = '<font color=\"#E68115\">通　過</font>'
+
+                                            var no = Math.floor(Math.random() * type.length);
+                                            document.getElementById("output_type").innerHTML = type[no];
+
+                                            if(no == 1 || no == 5 || no == 6){
+                                                document.getElementById("output_for").innerHTML = '当 駅 止';
+                                                document.getElementById("output_ryousu").innerHTML = '';
+                                            }
+                                            if(no == 7){
+                                                document.getElementById("output_ryousu").innerHTML = '';
+                                                document.getElementById("output_for").innerHTML = '';
+                                                document.getElementById("depature_time").innerHTML = '';
+                                            }
+
+                                            var okure = new Array();
+                                            okure[0] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>５分</center></font>';
+                                            okure[1] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>10分</center></font>';
+                                            okure[2] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>20分</center></font>';
+                                            okure[3] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>45分</center></font>';
+                                            okure[4] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>90分</center></font>';
+                                            okure[6] = '';
+                                            okure[7] = '';
+                                            okure[8] = '';
+
+                                            var no = Math.floor(Math.random() * okure.length);
+                                            document.getElementById("output_delay").innerHTML = okure[no];
+                        </script>
 
                         <table class="MSGothic" border="0" bgcolor="#161616" cellpadding="5" Cellspacing="0" style="border:thick width:800px;height:30px;">
                             <tr>
@@ -271,20 +311,20 @@
 0時
 11分発
 姫路方面
-播州赤穂(行き)
+播州赤穂(行)
 （時刻・行き先）行きが
 8両で
 まいります（⤵）
-(1.0s)
+(1.0)
 危ないですから
 黄色い点字ブロックまで
 お下がりください
-(0.75s)
+(0.75)
 7番乗り場に
 電車が
 まいります（⤵）
 ご注意ください
-(0.5s)
+(0.5)
 ♪神戸線接近メロディ
 ♪神戸線接近メロディ
 ♪神戸線接近メロディ
@@ -306,6 +346,11 @@
             <h2 class="INFOMATION">更新情報</h2>
                 <div class="update">
                     <table class="update">
+                        <tr>
+                            <td width="120px">2017/07/19</td>
+                            <td width="250px">[アップデート ver2.41]</td>
+                            <td>瑞風を含む音源を3種類追加しました。電光掲示板の表示を追加しました。</td>
+                        </tr>
                         <tr>
                             <td width="120px">2017/07/17</td>
                             <td width="250px">[アップデート ver2.4]</td>
@@ -355,7 +400,7 @@
                 </div>
                 <h3 class="ATTENTION">使用方法</h3>
                 <ul>
-                    <li>デフォルトで登録されている放送文章はリセットボタンで削除することができます。</li>
+                    <li>デフォルトで登録されている放送文章は【Reset】で削除することができます。</li>
                     <li>左側のセレクトボックス内の選択肢から分節を選択（各音源は【試聴】可能）し、ダブルクリックまたは追加ボタンで文節を追加します。文章を組み上げた後は、放送開始ボタンを押すと自動放送が開始します。
                     </li>
                     <li>放送文章は手書きすることも可能ですが、右の選択エリアの文節に文字列を合わせる必要があります。</li>
@@ -364,9 +409,10 @@
                 </ul>
                 <h3 class="ATTENTION">注意事項</h3>
                 <ul>
-                    <li>不具合等ございましたら、ご連絡いただければ幸いです。</li>
+                    <li>不具合等ございましたら、ぜひご連絡いただければ修正いたします。</li>
                     <li>駅名に関する音源にはイントネーションが異なる2種類の音源があります。「行き先」は行先を放送するときに使用し、「経由地」は「（駅名）から快速」などのように、主として経由駅の案内に使用します。「まいります」にも同様の区別があります。</li>
                     <li>ブラウザによって、音声間の時間が異なります。（例えば、safariよりChromeの方がより現実に近い間隔です）
+                    <li>電光掲示板は開発中につき、不具合等あると思います。ご指摘いただければありがたいです。</li>
                 </ul>
                 <h2 class="INFOMATION">連絡先</h2>
                 不具合報告やリクエストはこちらからお願いします。
@@ -405,7 +451,7 @@
                 <p>以上の方々にご提供いただいた音源の他に私が録音したものも一部含まれています。</p>
                 <div class="chui">
                     <h2 class="INFOMATION">二次利用について</h2>
-                    <p>このサイトでは音源ではなく、<font color="red">「自動放送のシステム」</font>を公開しております。つきましてはこのシミュレーターで作成した放送を二次利用するにあたって、以下の制限を設けさせていただきます。</p>
+                    <p>このサイトは音源ではなく、<font color="red">「自動放送のシステム」</font>を提供しております。つきましてはこのシミュレーターで作成した放送を二次利用するにあたって、以下の制限を設けさせていただきます。</p>
                     <ul>
                         <li>このシステムに使用している音源はご協力いただいた方からご提供頂いたものが含まれていますから、<font color="red">音源ファイル自体を保存したり、加工したり、それらを公開しないこと。</font></li>
                         <li>公開先にこのシミュレーターのURL<b>(https://hiiragiy.github.io/hiiragi.io/contents/announce/index.html)</b>を記載すること。</li>
