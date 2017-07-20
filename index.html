@@ -3,182 +3,136 @@
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
         <meta http-equiv="Content-Style-Type" content="text/css" />
         <meta http-equiv="Content-Script-Type" content="text/javascript" />
+
         <meta name="author" content="" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
+
         <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
         <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
         <!-- <link href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css" rel="stylesheet" > -->
+
         <title>Hiiragi_SIM 2.41</title>
+
         <script type="text/javascript" src="js/setting.js" charset="UTF-8"></script>
         <script type="text/javascript" src="js/main.js" charset="UTF-8"></script>
         <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
         <script type="text/javascript" src="js/jquery.cookie.js"></script>
         <script type="text/javascript" src="js/jquery.justify.js"></script>
         <script type="text/javascript">
-        $(document).ready(function(){
+            $(document).ready(function(){
             $('.justify').justify();
             $('.justify-table th').justify();
             });
         </script>
+
         <link rel="stylesheet" href="style.css" type="text/css">
+
     </head>
 
     <body>
         <div class="SITE_WIDTH">
-                <div electric-board>
-                    <div class="BOARD-TOP">
-                    </div>
-                    <div class="HOMENUM">
-                        <img src="icoca.png" alt=""  width="180" height="180">
-                    </div>
-                    <div class="BOARD-CONTENTS">
 
-                        <table border="0" bgcolor="#111111" cellpadding="5" Cellspacing="0" style="border:thick width:800px;height:30px;">
-                            <tr>
-                            <td width="1000px">
-                                <center>
+            <div electric-board>
+                <!-- <div class="BOARD-TOP">
+                </div> -->
+                <div class="HOMENUM"> <!-- イコちゃん画像 -->
+                <img src="icoca.png" alt=""  width="180" height="180">
+                </div>
+
+                <div class="BOARD-CONTENTS">
+                <table border="0" bgcolor="#111111" cellpadding="5" Cellspacing="0" style="border:thick width:800px;height:30px;">
+                    <tr>
+                        <td width="1000px">
+                            <center>
                                 <p><font color="white" size="5pt"><span class="cubettl">&nbsp;Ａ&nbsp;</span> JR神戸線/JR京都線/琵琶湖線 自動放送シミュレーター</font>
                                 <br />
                                 <font color="white" size="2pt">Hiiragi SIM on JR West, Lake Biwa Line, JR Kyoto Line, JR Kobe Line 2.40 (スマホ非対応)</font></p>
-                                </center>
-                            </td>
-                            </tr>
-                        </table>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
 
-                        <table class="justify-table" border="0" bgcolor="#111111" cellpadding="5" Cellspacing="0" style="font-family: Noto Sans Japanese; border:thick; width:800px; height:30px;">
-                            <tr>
-                                    <td width="100px">
-                                        <font color="white"><center>種　別<br /><font size="1">Type</font></center></font>
-                                    </td>
-                                    <td width="250px">
-                                        <font color="white"><center>列車名/乗車位置<br /><font size="1">Train Name / Boarding Position</font></center></font>
-                                    </td>
-                                    <td width="100px">
-                                        <font color="white"><center>時　刻<br /><font size="1">Departure Time</font></center></font>
-                                    </td>
-                                    <td width="230px">
-                                        <font color="white"><center>行　先<br /><font size="1">Destination</font></center></font>
-                                    </td>
-                                    <td width="170px">
-                                        <font color="white"><center>遅　れ<br /><font size="1">Delay</font></center></font>
-                                    </td>
-                            </tr>
-                            <tr bgcolor="#161616" class="MSGothic">
-                                    <td width="100px" class="led" height="12px">
-                                        <font color="#377F0B" size="6pt"><span style="letter-spacing: -3px;"><center><div id="output_type">普　通</div></center></span></font>
-                                    </td>
-                                    <td width="200px" class="led" height="12px">
-                                        <font color="#377F0B" size="6pt"><center><div id="output_ryousu">△1〜8</div></center></font>
-                                    </td>
-                                    <td width="100px" class="led" height="12px">
-                                        <font color="#E68115" size="6pt"><span id="depature_time"><center><div id="output_hour" style="display: inline;">8</div>:<div id="output_minute" style="display: inline;">11</div></center></span></font>
-                                    </td>
-                                    <td width="230px" class="led" height="12px">    
-                                        <font color="#377F0B" size="6pt"><center>
-                                        <div id="output_for">
-                                        <span id="keiyu"></span>
-                                        <span id="dest"></span>
-                                        </div>
-                                        </center>
-                                        </font>
-                                    </td>
-                                    <td width="170px" class="led" height="12px">
-                                        <center><div id="output_delay" style="display: inline;"></div></center>
-                                    </td>
-                            </tr>
-                        </table>
-                        <script type="text/javascript">
-
-                                            var station = new Array();
-                                            station[0] = '備中高梁';
-                                            station[1] = '魚　住';
-                                            station[2] = '鷹　取';
-                                            station[3] = '島　本';
-                                            station[4] = '東加古川';
-                                            station[5] = '東 姫 路';
-                                            station[6] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">名古屋</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>岡 崎</font>';
-                                            station[7] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">岡山</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>三 原</font>';
-                                            station[8] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">米原</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>大 垣</font>';
-                                            station[9] = '手　柄';
-                                            station[10] = '比叡山坂本';
-
-                                            var no = Math.floor(Math.random() * station.length);
-                                            document.getElementById("output_for").innerHTML = station[no];
-
-                                            var type = new Array();
-
-                                            type[0] = '普　通';
-                                            type[1] = '<font color=\"#E68115\">貨　物</font>';
-                                            type[2] = '<font color=\"#E68115\">快　速</font>';
-                                            type[3] = '<font color=\"red\">新快速</font>';
-                                            type[4] = '<font color=\"red\">臨　時</font>';
-                                            type[5] = '団　体';
-                                            type[6] = '<font color=\"#E68115\">回　送</font>';
-                                            type[7] = '<font color=\"#E68115\">通　過</font>'
-
-                                            var no = Math.floor(Math.random() * type.length);
-                                            document.getElementById("output_type").innerHTML = type[no];
-
-                                            if(no == 1 || no == 5 || no == 6){
-                                                document.getElementById("output_for").innerHTML = '当 駅 止';
-                                                document.getElementById("output_ryousu").innerHTML = '';
-                                            }
-                                            if(no == 7){
-                                                document.getElementById("output_ryousu").innerHTML = '';
-                                                document.getElementById("output_for").innerHTML = '';
-                                                document.getElementById("depature_time").innerHTML = '';
-                                            }
-
-                                            var okure = new Array();
-                                            okure[0] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>５分</center></font>';
-                                            okure[1] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>10分</center></font>';
-                                            okure[2] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>20分</center></font>';
-                                            okure[3] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>45分</center></font>';
-                                            okure[4] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>90分</center></font>';
-                                            okure[6] = '';
-                                            okure[7] = '';
-                                            okure[8] = '';
-
-                                            var no = Math.floor(Math.random() * okure.length);
-                                            document.getElementById("output_delay").innerHTML = okure[no];
-                        </script>
-
-                        <table class="MSGothic" border="0" bgcolor="#161616" cellpadding="5" Cellspacing="0" style="border:thick width:800px;height:30px;">
-                            <tr>
-                                <td class="led">
+                <table class="justify-table" border="0" bgcolor="#111111" cellpadding="5" Cellspacing="0" style="font-family: Noto Sans Japanese; border:thick; width:800px; height:30px;">
+                    <tr>
+                        <td width="100px">
+                            <font color="white"><center>種　別<br /><font size="1">Type</font></center></font>
+                        </td>
+                        <td width="250px">
+                            <font color="white"><center>列車名/乗車位置<br /><font size="1">Train Name / Boarding Position</font></center></font>
+                        </td>
+                        <td width="100px">
+                            <font color="white"><center>時　刻<br /><font size="1">Departure Time</font></center></font>
+                        </td>
+                        <td width="230px">
+                            <font color="white"><center>行　先<br /><font size="1">Destination</font></center></font>
+                        </td>
+                        <td width="170px">
+                            <font color="white"><center>遅　れ<br /><font size="1">Delay</font></center></font>
+                        </td>
+                    </tr>
+                    <tr bgcolor="#161616" class="MSGothic">
+                        <td width="100px" class="led" height="12px">
+                            <font color="#377F0B" size="6pt"><span style="letter-spacing: -3px;"><center><div id="output_type">普　通</div></center></span></font>
+                        </td>
+                        <td width="200px" class="led" height="12px">
+                            <font color="#377F0B" size="6pt"><center><div id="output_ryousu">△1〜8</div></center></font>
+                        </td>
+                        <td width="100px" class="led" height="12px">
+                            <font color="#E68115" size="6pt"><span id="depature_time"><center><div id="output_hour" style="display: inline;">8</div>:<div id="output_minute" style="display: inline;">11</div></center></span></font>
+                        </td>
+                        <td width="230px" class="led" height="12px">    
+                            <font color="#377F0B" size="6pt">
                                 <center>
-                                    <font size="5" color="#377F0B">
-                                    <!-- 377F0B,E68115 -->
-                                    <marquee width="780px" scrollamount="6" truespeed></marquee>
-                                    </font>
+                                <div id="output_for">
+                                    <span id="keiyu"></span>
+                                    <span id="dest"></span>
+                                </div>
                                 </center>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="led">
-                                <center>
-                                    <font size="5" color="#E68115">
-                                    <!-- 377F0B,E68115 -->
-                                    <marquee width="780px" scrollamount="6" truespeed>【バーション2.4】ブラウザのcookieを利用して放送文章を保存できるようになりました。</font></marquee>
-                                    </font>
-                                 </center>
-                                </td>
-                            </tr>
-                        </table>
-                        <center><font size="2px" color="#cccccc">時間・行き先・種別を選択することでページ上部の電光掲示板が更新されます。</font></center>
-                    </div>
-                </center>
+                            </font>
+                        </td>
+                        <td width="170px" class="led" height="12px">
+                            <center><div id="output_delay" style="display: inline;"></div></center>
+                        </td>
+                    </tr>
+                </table>
+
+                <script type="text/javascript">
+                    top_info();
+                </script>
+
+                <table class="MSGothic" border="0" bgcolor="#161616" cellpadding="5" Cellspacing="0" style="border:thick width:800px;height:30px;">
+                    <tr>
+                        <td class="led">
+                            <center>
+                                <font size="5" color="#377F0B">
+                                <!-- 377F0B,E68115 -->
+                                <marquee width="780px" scrollamount="6" truespeed></marquee>
+                                </font>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="led">
+                            <center>
+                                <font size="5" color="#E68115">
+                                <!-- 377F0B,E68115 -->
+                                <marquee width="780px" scrollamount="6" truespeed>【バーション2.4】ブラウザのcookieを利用して放送文章を保存できるようになりました。</font></marquee>
+                                </font>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+                <center><font size="2px" color="#cccccc">時間・行き先・種別を選択することでページ上部の電光掲示板が更新されます。</font></center>
             </div>
 
             <div class="MAIN">
-
                 <div class="SELECT_SPACE">
+                    <h2 class="INFOMATION">音源一覧</h2>
 
-                <h2 class="INFOMATION">音源一覧</h2>
                     <div style="float:top;">
                         <!--=====時選択======================================-->
                         <div class="category">時<br />
@@ -186,7 +140,12 @@
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_hour.length ; i++)
                                     {
-                                        document.write("<option value=''>"+soundData_hour[i][1]+"</option>");
+                                    document.write("<option value=''>"+soundData_hour[i][1]+"</option>");
+                                    }
+                                    function setSoundParts_hour(){
+                                        var index = document.getElementById("partsListSelect_hour").selectedIndex;
+                                        var addText = soundData_hour[index][1];
+                                        output(addText);
                                     }
                                 </script>
                             </select>
@@ -197,7 +156,12 @@
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_minute.length ; i++)
                                     {
-                                        document.write("<option value=''>"+soundData_minute[i][1]+"</option>");
+                                    document.write("<option value=''>"+soundData_minute[i][1]+"</option>");
+                                    }
+                                    function setSoundParts_minute(){
+                                        var index = document.getElementById("partsListSelect_minute").selectedIndex;
+                                        var addText = soundData_minute[index][1];
+                                        output(addText);
                                     }
                                 </script>
                             </select>
@@ -208,7 +172,12 @@
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_and.length ; i++)
                                     {
-                                        document.write("<option value=''>"+soundData_and[i][1]+"</option>");
+                                    document.write("<option value=''>"+soundData_and[i][1]+"</option>");
+                                    }
+                                    function setSoundParts_and(){
+                                        var index = document.getElementById("partsListSelect_and").selectedIndex;
+                                        var addText = soundData_and[index][1];
+                                        output(addText);
                                     }
                                 </script>
                             </select>
@@ -219,7 +188,12 @@
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_for.length ; i++)
                                     {
-                                        document.write("<option value=''>"+soundData_for[i][1]+"</option>");
+                                    document.write("<option value=''>"+soundData_for[i][1]+"</option>");
+                                    }
+                                    function setSoundParts_for(){
+                                        var index = document.getElementById("partsListSelect_for").selectedIndex;
+                                        var addText = soundData_for[index][1];
+                                        output(addText);
                                     }
                                 </script>
                             </select>
@@ -230,7 +204,12 @@
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_melody.length ; i++)
                                     {
-                                        document.write("<option value=''>"+soundData_melody[i][1]+"</option>");
+                                    document.write("<option value=''>"+soundData_melody[i][1]+"</option>");
+                                    }
+                                    function setSoundParts_melody(){
+                                        var index = document.getElementById("partsListSelect_melody").selectedIndex;
+                                        var addText = soundData_melody[index][1];
+                                        output(addText);
                                     }
                                 </script>
                             </select>
@@ -244,21 +223,31 @@
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_silent.length ; i++)
                                     {
-                                        document.write("<option value=''>"+soundData_silent[i][1]+"</option>");
+                                    document.write("<option value=''>"+soundData_silent[i][1]+"</option>");
+                                    }
+                                    function setSoundParts_silent(){
+                                        var index = document.getElementById("partsListSelect_silent").selectedIndex;
+                                        var addText = soundData_silent[index][1];
+                                        output(addText);
                                     }
                                 </script>
                             </select>
                         </div>
                         <!--=====種別======================================-->
                         <div class="category">種別・号車<br /> <!-- （特急・号車番号) -->
-                        <select class="SAWARABI" size='8' id='partsListSelect_type' style='font-size:16px; width: 100px; height: 150px;' onChange='HowsetSoundParts_type();reload_type()' ondblclick='setSoundParts_type()' >
-                        <script type="text/javascript">
-                        for(i=0 ; i<soundData_type.length ; i++)
-                        {
-                            document.write("<option value=''>"+soundData_type[i][1]+"</option>");
-                        }
-                        </script>
-                        </select>
+                            <select class="SAWARABI" size='8' id='partsListSelect_type' style='font-size:16px; width: 100px; height: 150px;' onChange='HowsetSoundParts_type();reload_type()' ondblclick='setSoundParts_type()' >
+                                <script type="text/javascript">
+                                    for(i=0 ; i<soundData_type.length ; i++)
+                                    {
+                                    document.write("<option value=''>"+soundData_type[i][1]+"</option>");
+                                    }
+                                    function setSoundParts_type(){
+                                        var index = document.getElementById("partsListSelect_type").selectedIndex;
+                                        var addText = soundData_type[index][1];
+                                        output(addText);
+                                    }
+                                </script>
+                            </select>
                         </div>
                         <!--=====編成両数======================================-->
                         <div class="category"">編成両数<br /> <!-- (接続詞に注意) -->
@@ -266,7 +255,12 @@
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData_ryousu.length ; i++)
                                     {
-                                        document.write("<option value=''>"+soundData_ryousu[i][1]+"</option>");
+                                    document.write("<option value=''>"+soundData_ryousu[i][1]+"</option>");
+                                    }
+                                    function setSoundParts_ryousu(){
+                                        var index = document.getElementById("partsListSelect_ryousu").selectedIndex;
+                                        var addText = soundData_ryousu[index][1];
+                                        output(addText);
                                     }
                                 </script>
                             </select>
@@ -277,30 +271,37 @@
                                 <script type="text/javascript">
                                     for(i=0 ; i<soundData.length ; i++)
                                     {
-                                        document.write("<option value=''>"+soundData[i][1]+"</option>");
+                                    document.write("<option value=''>"+soundData[i][1]+"</option>");
+                                    }
+                                    function setSoundParts(){
+                                        var index = document.getElementById("partsListSelect").selectedIndex;
+                                        var addText = soundData[index][1];
+                                        output(addText);
                                     }
                                 </script>
                             </select>
                         </div>
+
                         <div style="text-align: center;">
-                        <input type="button" id="add" value="追加" onclick="whichadd()" style='font-size:16px;' />
-                        <input type="button" id="add" value="試聴" onclick="testplay_sound()" style='font-size:16px;' />
+                            <input type="button" id="add" value="追加" onclick="whichadd()" style='font-size:16px;' />
+                            <input type="button" id="add" value="試聴" onclick="testplay_sound()" style='font-size:16px;' />
                         </div>
+
                         <font size="2px">※ダブルクリックまたは追加ボタンで文節を追加します。</font>
                     </div>
                 </div>
 
                 <div class="WORKSPACE">
-                <h2 class="INFOMATION">放送文章</h2>
+                    <h2 class="INFOMATION">放送文章</h2>
                     <script type="text/javascript">
                         $(function(){
                         if ($.cookie("inputTextarea")){
-                            $('#inputTextarea').val($.cookie("inputTextarea"));  
+                        $('#inputTextarea').val($.cookie("inputTextarea"));  
                         }
                         //クッキーを保存  
                         $("#SaveButton").click(function(){  
-                            $.cookie("inputTextarea",$('#inputTextarea').val());  
-                            })  
+                        $.cookie("inputTextarea",$('#inputTextarea').val());  
+                        })  
                         })  
                     </script> 
 
@@ -329,21 +330,21 @@
 ♪神戸線接近メロディ
 ♪神戸線接近メロディ
 </textarea>
+
                     <audio id="audio0" src="sound/null-250.mp3" height='0'></audio>
                     <div class="buttons">
-                    <div>
-                    <input type="button" id="announceStartButton" value="放送開始" onclick="checkInput()" />
-                    <input type="button" id="ResetButton" value="Reset" onclick="resetInput()"/>
-                    <input type="submit" id="SaveButton" value="保存"/>
+                        <div>
+                            <input type="button" id="announceStartButton" value="放送開始" onclick="checkInput()" />
+                            <input type="button" id="ResetButton" value="Reset" onclick="resetInput()"/>
+                            <input type="submit" id="SaveButton" value="保存"/>
+                        </div>
+                        <font size="2px">※環境によっては再生に少々時間を要すことがあります。</font>
                     </div>
-                    <font size="2px">※環境によっては再生に少々時間を要すことがあります。</font>
-                </div>
                 </div>
             </div>
 
             <div class="EXPRENATION">
-
-            <h2 class="INFOMATION">更新情報</h2>
+                <h2 class="INFOMATION">更新情報</h2>
                 <div class="update">
                     <table class="update">
                         <tr>
@@ -398,6 +399,7 @@
                         </tr>
                     </table>
                 </div>
+
                 <h3 class="ATTENTION">使用方法</h3>
                 <ul>
                     <li>デフォルトで登録されている放送文章は【Reset】で削除することができます。</li>
@@ -420,18 +422,20 @@
                     <li><a href="https://hiiragiy.github.io/hiiragi.io/" target="_brank">Home Page</a>（左上PROFILEにメルアドを載せています）</li>
                     <li><a href="https://twitter.com/hiiragiy99" target="_blank">Twitter</a>(@ツイートしてください)</li>
                 </ul>
-                製作者: ひいらぎ
+                製作者: ひいらぎ バグ報告など、ぜひツイートお願いします！
+               <br>
+               <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://hiiragiy.github.io/hrgy_announce/" data-text="JR神戸線/JR京都線/琵琶湖線 自動放送シミュレーター を使ってみました！" data-size="large" data-related="hiiragiy99" data-hashtags="hrgAnnounce_SIM">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 <h2 class="ongen">このシミュレーターについて</h2>
                 <p>JR神戸線・JR京都線・琵琶湖線の運行管理システム内各駅で使用されている駅自動放送を自由に組み立て自動放送を流すシミュレーターです。上記路線以外の音源も含まれております。</p>
                 <p>音源は随時追加していきます。北陸本線についても再現できればと思います。</p> 
                 <h2 class="ongen">動作環境について</h2>
                 <ul>
                     <li><p>以下3点、プログラム開発者であるyoshi223様のサイトより引用させていただきます。</p>
-                        <ul>
-                            <li>お使いの端末やOS、ブラウザによっては正しく動作しない可能性があります。なるべくパソコン(WindowsやMac)のGoogle Chromeをご利用ください。その他のOS・ブラウザからは正常に動作しない可能性があります。またパソコン以外の端末(スマートフォン)も正しく動作しない可能性が高いです。</li>
-                            <li>本シミュレーターはJavaScript・CSS等が正常に動作する環境でご覧いただけます。JavaScriptが動作しない環境では動きません。</li>
-                            <li>動作確認は MacBookのGoogle Chrome バージョン 49.0.2623.112 で行なっています。他のOS・ブラウザではレイアウトや挙動が異なったり、エラーで正常に動作しない場合があります。</li>
-                        </ul>
+                    <ul>
+                        <li>お使いの端末やOS、ブラウザによっては正しく動作しない可能性があります。なるべくパソコン(WindowsやMac)のGoogle Chromeをご利用ください。その他のOS・ブラウザからは正常に動作しない可能性があります。またパソコン以外の端末(スマートフォン)も正しく動作しない可能性が高いです。</li>
+                        <li>本シミュレーターはJavaScript・CSS等が正常に動作する環境でご覧いただけます。JavaScriptが動作しない環境では動きません。</li>
+                        <li>動作確認は MacBookのGoogle Chrome バージョン 49.0.2623.112 で行なっています。他のOS・ブラウザではレイアウトや挙動が異なったり、エラーで正常に動作しない場合があります。</li>
+                    </ul>
                     </li>
                 </ul>
                 <h2 class="INFOMATION">プログラム配布元</h2>
@@ -439,10 +443,10 @@
                 <a class="yoshi223" href="http://r113.web.fc2.com/p/announce/jrw-osaka-loop/index.html" target="_blank">大阪環状線 駅自動放送シミュレーター(スマホ非対応)</a>
                 <h4>yoshi223様</h4>
                 <ul>
-                <li><a class="yoshi223" href="http://r113.web.fc2.com/index.htm" target="_blank">yoshi223の鉄道館</a></li>
-                <li><a class="yoshi223" href="https://twitter.com/rk113" target="_blank">Twitter</a></li>
+                    <li><a class="yoshi223" href="http://r113.web.fc2.com/index.htm" target="_blank">yoshi223の鉄道館</a></li>
+                    <li><a class="yoshi223" href="https://twitter.com/rk113" target="_blank">Twitter</a></li>
                 </ul>
-                
+
                 <h2 class="ongen">音源について</h2>
                 <p>このシュミレータを作成するにあたって、やたてつ様（<a href="https://twitter.com/yyyy_yatatetsu" target="_blank">Twitter</a>・
                 <a href="https://www.youtube.com/playlist?list=PLpkTgxvE15kqYbZSCODnVep_aSoBCEcUf" target="_blank">YouTube</a>・
@@ -460,10 +464,10 @@
                 </div>
                 <div class="homelink">
                     <center>
-                        <h4><a href="https://hiiragiy.github.io/hiiragi.io/">トップへ</a></h4></font>
-                        <small>© 2016-2017 Hiiragi_Y</small>
+                    <h4><a href="https://hiiragiy.github.io/hiiragi.io/">トップへ</a></h4></font>
+                    <small>© 2016-2017 Hiiragi_Y</small>
                     </center>
-                </div>
+                </div>    
             </div>
         </div>
     </body>

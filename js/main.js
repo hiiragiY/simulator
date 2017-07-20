@@ -1,5 +1,57 @@
-function main()
+function top_info()
 {
+	var station = new Array();
+	station[0] = '備中高梁';
+	station[1] = '魚　住';
+	station[2] = '鷹　取';
+	station[3] = '島　本';
+	station[4] = '東加古川';
+	station[5] = '東 姫 路';
+	station[6] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">名古屋</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>岡 崎</font>';
+	station[7] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">岡山</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>三 原</font>';
+	station[8] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">米原</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>大 垣</font>';
+	station[9] = '手　柄';
+	station[10] = '比叡山坂本';
+
+	var no = Math.floor(Math.random() * station.length);
+	document.getElementById("output_for").innerHTML = station[no];
+
+	var type = new Array();
+
+	type[0] = '普　通';
+	type[1] = '<font color=\"#E68115\">貨　物</font>';
+	type[2] = '<font color=\"#E68115\">快　速</font>';
+	type[3] = '<font color=\"red\">新快速</font>';
+	type[4] = '<font color=\"red\">臨　時</font>';
+	type[5] = '団　体';
+	type[6] = '<font color=\"#E68115\">回　送</font>';
+	type[7] = '<font color=\"#E68115\">通　過</font>'
+
+	var no = Math.floor(Math.random() * type.length);
+	document.getElementById("output_type").innerHTML = type[no];
+
+	if(no == 1 || no == 5 || no == 6){
+	    document.getElementById("output_for").innerHTML = '当 駅 止';
+	    document.getElementById("output_ryousu").innerHTML = '';
+	}
+	if(no == 7){
+	    document.getElementById("output_ryousu").innerHTML = '';
+	    document.getElementById("output_for").innerHTML = '';
+	    document.getElementById("depature_time").innerHTML = '';
+	}
+
+	var okure = new Array();
+	okure[0] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>５分</center></font>';
+	okure[1] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>10分</center></font>';
+	okure[2] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>20分</center></font>';
+	okure[3] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>45分</center></font>';
+	okure[4] = '<font color=\"red\" size=\"5pt\"><center><span class=\"transform\">遅れ約</span>90分</center></font>';
+	okure[6] = '';
+	okure[7] = '';
+	okure[8] = '';
+
+	var no = Math.floor(Math.random() * okure.length);
+	document.getElementById("output_delay").innerHTML = okure[no];
 }
 
 //追加②
@@ -298,195 +350,19 @@ function whichadd()//今何が選択されているかを調べた上で追加�
 		setSoundParts_and();
 	}
 	else if(setSoundParts_melody_on == true){
-	setSoundParts_melody();
+		setSoundParts_melody();
 	}
 	else if(setSoundParts_type_on == true){
-	setSoundParts_type();
+		setSoundParts_type();
 	}
 	else if(setSoundParts_ryousu_on == true){
-	setSoundParts_ryousu();
+		setSoundParts_ryousu();
 	}
 }
 
 //追加⑥
-function setSoundParts()
-{
-	var id = "partsListSelect";
-	var index = document.getElementById(id).selectedIndex;
-	var addText = soundData[index][1];
-	
-	//入っている文字列を取り出す
-	var id = "inputTextarea";
-	var text = document.getElementById(id).value;
-	
-	//付け足したい文字列を追加する
-	//テキストが既に入っており、最後の文字が改行でなければ、改行をまず追加する
-	if(text != "" && text.slice(-1) != "\n")
-		text += "\n";
-	
-	text += addText;
 
-	//文字列を返してあげる
-	var id = "inputTextarea";
-	document.getElementById(id).value = text;
-
-}
-
-function setSoundParts_silent()
-{
-	var id = "partsListSelect_silent";
-	var index = document.getElementById(id).selectedIndex;
-	var addText = soundData_silent[index][1];
-	
-	//入っている文字列を取り出す
-	var id = "inputTextarea";
-	var text = document.getElementById(id).value;
-	
-	//付け足したい文字列を追加する
-	//テキストが既に入っており、最後の文字が改行でなければ、改行をまず追加する
-	if(text != "" && text.slice(-1) != "\n")
-		text += "\n";
-	
-	text += addText;
-
-	//文字列を返してあげる
-	var id = "inputTextarea";
-	document.getElementById(id).value = text;
-}
-
-function setSoundParts_hour()
-{
-	var id = "partsListSelect_hour";
-	var index = document.getElementById(id).selectedIndex;
-	var addText = soundData_hour[index][1];
-	
-	//入っている文字列を取り出す
-	var id = "inputTextarea";
-	var text = document.getElementById(id).value;
-	
-	//付け足したい文字列を追加する
-	//テキストが既に入っており、最後の文字が改行でなければ、改行をまず追加する
-	if(text != "" && text.slice(-1) != "\n")
-		text += "\n";
-	
-	text += addText;
-
-	//文字列を返してあげる
-	var id = "inputTextarea";
-	document.getElementById(id).value = text;
-}
-function setSoundParts_minute()
-{
-	var id = "partsListSelect_minute";
-	var index = document.getElementById(id).selectedIndex;
-	var addText = soundData_minute[index][1];
-	
-	//入っている文字列を取り出す
-	var id = "inputTextarea";
-	var text = document.getElementById(id).value;
-	
-	//付け足したい文字列を追加する
-	//テキストが既に入っており、最後の文字が改行でなければ、改行をまず追加する
-	if(text != "" && text.slice(-1) != "\n")
-		text += "\n";
-	
-	text += addText;
-
-	//文字列を返してあげる
-	var id = "inputTextarea";
-	document.getElementById(id).value = text;
-}
-
-function setSoundParts_for()
-{
-	var id = "partsListSelect_for";
-	var index = document.getElementById(id).selectedIndex;
-	var addText = soundData_for[index][1];
-	
-	//入っている文字列を取り出す
-	var id = "inputTextarea";
-	var text = document.getElementById(id).value;
-	
-	//付け足したい文字列を追加する
-	//テキストが既に入っており、最後の文字が改行でなければ、改行をまず追加する
-	if(text != "" && text.slice(-1) != "\n")
-		text += "\n";
-	
-	text += addText;
-
-	//文字列を返してあげる
-	var id = "inputTextarea";
-	document.getElementById(id).value = text;
-}
-function setSoundParts_and()
-{
-	var id = "partsListSelect_and";
-	var index = document.getElementById(id).selectedIndex;
-	var addText = soundData_and[index][1];
-	
-	//入っている文字列を取り出す
-	var id = "inputTextarea";
-	var text = document.getElementById(id).value;
-	
-	//付け足したい文字列を追加する
-	//テキストが既に入っており、最後の文字が改行でなければ、改行をまず追加する
-	if(text != "" && text.slice(-1) != "\n")
-		text += "\n";
-	
-	text += addText;
-
-	//文字列を返してあげる
-	var id = "inputTextarea";
-	document.getElementById(id).value = text;
-}
-function setSoundParts_melody()
-{
-	var id = "partsListSelect_melody";
-	var index = document.getElementById(id).selectedIndex;
-	var addText = soundData_melody[index][1];
-	
-	//入っている文字列を取り出す
-	var id = "inputTextarea";
-	var text = document.getElementById(id).value;
-	
-	//付け足したい文字列を追加する
-	//テキストが既に入っており、最後の文字が改行でなければ、改行をまず追加する
-	if(text != "" && text.slice(-1) != "\n")
-		text += "\n";
-	
-	text += addText;
-
-	//文字列を返してあげる
-	var id = "inputTextarea";
-	document.getElementById(id).value = text;
-}
-function setSoundParts_type()
-{
-	var id = "partsListSelect_type";
-	var index = document.getElementById(id).selectedIndex;
-	var addText = soundData_type[index][1];
-	
-	//入っている文字列を取り出す
-	var id = "inputTextarea";
-	var text = document.getElementById(id).value;
-	
-	//付け足したい文字列を追加する
-	//テキストが既に入っており、最後の文字が改行でなければ、改行をまず追加する
-	if(text != "" && text.slice(-1) != "\n")
-		text += "\n";
-	
-	text += addText;
-
-	//文字列を返してあげる
-	var id = "inputTextarea";
-	document.getElementById(id).value = text;
-}
-function setSoundParts_ryousu()
-{
-	var id = "partsListSelect_ryousu";
-	var index = document.getElementById(id).selectedIndex;
-	var addText = soundData_ryousu[index][1];
-	
+function output(addText){
 	//入っている文字列を取り出す
 	var id = "inputTextarea";
 	var text = document.getElementById(id).value;
@@ -522,6 +398,7 @@ function checkInput()
 	
 	var judgeFlag = true;
 	var NGText = "";
+
 	for(i=0 ; i<inputTextSplit.length ; i++)
 	{
 		var innerFlag = false;
