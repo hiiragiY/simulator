@@ -14,7 +14,7 @@ soundData =
   ["sound/4bannoriba-ni.mp3", "4番乗り場に"],
   ["sound/7bannoribani.mp3", "7番乗り場に"],
   ["sound/9bannoriba-ni.mp3", "9番乗り場に"],
-  ["sound/_mairimasu.mp3", "まいります"],
+  ["sound/mairimasu.mp3", "まいります"],
 
   ["sound/densya-ha.mp3", "電車は"],
   ["sound/ressya-ha.mp3", "列車は"],
