@@ -1,8 +1,39 @@
+@font-face{
+    font-family: "mplus-1c-light";
+    src: url(font/mplus-1c-light.ttf);
+}
+
+@font-face{
+    font-family: "mplus-1c-regular";
+    src: url(font/mplus-1c-regular.ttf);
+}
+
+/*font-family: 'Dosis', sans-serif;　とりあえず瑞風*/
+
+.wf-roundedmplus1c { font-family: "Rounded-L Mplus 1c"; }
+
+* {
+-webkit-appearance: none;
+}
+
+span.transform{
+    display: inline-block; 
+    transform: scale(0.8,1);
+    margin: 0px;
+    padding: 0px;
+}
+
+span.transform_min{
+    display: inline-block; 
+    transform: scale(0.6,1);
+    margin: 0px;
+    padding: 0px;
+}
+
 div.TITLE-BOARD {
     width: 1000px;
     height: 350px;
     background-color: #111111;
-    font-family: "Mplus 1p";
     margin: auto;
 }
 span.cubettl{
@@ -11,6 +42,11 @@ span.cubettl{
     border-color: #ffffff;
     color:#ffffff;
     font-size: 80%;
+}
+
+div.text-narrow {
+    transform: scale(0.7, 1);
+    display: inline-block;
 }
 
 /*Safariのみ見え方が異なるため、ハックで調整*/
@@ -51,19 +87,12 @@ td.led:after{
     bottom:0;
     left:0;
     background:url("bg-led.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    -webkit-background-size:2px 2px;
-    -moz-background-size:2px 2px;
-    -ms-background-size:2px 2px;
-    -o-background-size:2px 2px;
-    background-size:2px 2px;
-    z-index:10;
-}
-
-table.SAWARABI {
-    font-family: "Noto Sans Japanese";
-}
-tr.SAWARABI {
-    font-family: "Noto Sans Japanese";
+    -webkit-background-size:2.6px 2.6px;
+    -moz-background-size:2.6px 2.6px;
+    -ms-background-size:2.6px 2.6px;
+    -o-background-size:2.6px 2.6px;
+    background-size:2.6px 2.6px;
+    z-index:15;
 }
 
 div.BOARD-CONTENTS {
@@ -82,7 +111,8 @@ body{
 div.SITE_WIDTH {
 	width: 1000px;
 	margin: auto;
-	font-family: "Rounded Mplus 1c", sans-serif;
+	/*font-family: "Rounded Mplus 1c", sans-serif;*/
+    font-family: "mplus-1c-light";
     margin: auto;
 }
 p.title {
@@ -108,45 +138,60 @@ p.title_underbar{
     border-bottom: 3px solid black;
     color: #ffffff;
 }
+div.electric-bored{
+    background-color: #111111;
+}
+
 div.MAIN {
     float: center;
     width: 1000px;
-    height: 860px;
-    font-family: 'Rounded Mplus 1c', sans-serif;
+    height: 750px;
+    font-family: "mplus-1c-light" ,sans-serif;
+    /*background-color: #111111;*/
     padding: 5px;
-    background-color: #111111;
     margin: auto;
     display:block;
 }
+
+div.category{
+    font-family: 'mplus-1c-regular';
+    float: left;
+    padding: 3px;
+}
+
 div.SELECT_SPACE {
 	float: left;
-	width: 650px;
-    height: 560px;
-	font-family: 'Rounded Mplus 1c', sans-serif;
-    color: #ffffff;
-    background-color: #111111;
+	width: 640px;
+    height: 500px;
+	font-family: "mplus-1c-light";
+    color: #000000;
     text-align: center;
     font-size: 90%;
 	margin: 0;
 }
 div.SELECT_SPACE select{
-    font-family: "Mplus 1p";
-    color: #ffffff;
-    background-color: #161616;
+    color: #000000;
+    font-family: "mplus-1c-light";
+    background-color: #ffffff;
+    border-color: #cccccc;
+    margin: auto;
+    padding: auto;
 }
 div.WORKSPACE {
 	float: right;
-	width: 350px;
-    height: 560px;
-	font-family: 'Rounded Mplus 1c', sans-serif;
-    color: #ffffff;
-    background-color: #111111;
+	width: 340px;
+    height: 500px;
+	font-family: "mplus-1c-light";
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 90%;
 	margin: 0;
 }
 div.WORKSPACE textarea{
-    font-family: "Mplus 1p";
+    font-family: "mplus-1c-light";
     color: #ffffff;
-    background-color: #161616;
+    background-color: #000000;
 }
 
 div.BUTTON_S {
@@ -158,11 +203,11 @@ div.BUTTON_S {
 div.EXPRENATION {
     float: center;
     width: 1000px;
-    font-family: "Noto Sans Japanese";
+    font-family: "mplus-1c-light";
     margin: 0;
     display:block;
-    color: #ffffff;
-    background-color: #222222;
+    color: #000000;
+    background-color: #ffffff;
 }
 h2{
     color: #ffffff;
@@ -170,7 +215,7 @@ h2{
 }
 h3.HOWTOUSE{
     color: #ffffff;
-    font-style: 'Rounded Mplus 1c', sans-serif;
+    font-family: "mplus-1c-light";
     background-color: #007f00;
 }
 h3.ATTENTION{
@@ -190,9 +235,19 @@ div.scr {
   background-color: #111111;
   border: 0.5pt color:#f9efdd;
 }
+
+div.update{
+    overflow: scroll;
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    border: 0.5pt color:#f9efdd;
+    width:auto;
+    position:relative;
+}
+
 h2.INFOMATION{
     color: #ffffff;
-    font-style: 'Rounded Mplus 1c', sans-serif;
     background-color: #7f0000;
 }
 table.update {
@@ -226,7 +281,7 @@ h2.ongen {
     background-color: #827f00;
 }
 div.chui {
-    background-color: #777777;
+    background-color: #CCCCCC;
     color: #000000;
 }
 h2.niji {
@@ -270,7 +325,7 @@ input[type="button"]#add:hover{
 }
 
 input[type="button"]#announceStartButton{
-    width:130px;
+    width:100px;
     height: 35px;
     font-size:16px;
     text-decoration:none;
@@ -284,7 +339,7 @@ input[type="button"]#announceStartButton{
     margin: 10px
 }
 input[type="button"]#announceStartButton:hover{
-    width:130px;
+    width:100px;
     height: 35px;
     font-size:16px;
     text-decoration:none;
@@ -299,7 +354,7 @@ input[type="button"]#announceStartButton:hover{
 }
 
 input[type="button"]#ResetButton{
-    width:100px;
+    width:80px;
     height: 35px;
     font-size:16px;
     text-decoration:none;
@@ -313,7 +368,7 @@ input[type="button"]#ResetButton{
     margin: 10px
 }
 input[type="button"]#ResetButton:hover{
-    width:100px;
+    width:80px;
     height: 35px;
     font-size:16px;
     text-decoration:none;
@@ -325,4 +380,39 @@ input[type="button"]#ResetButton:hover{
     border: 0px;
     border-radius:10px;
     margin: 10px
+}
+
+input[type="submit"]#SaveButton{
+    width:60px;
+    height: 35px;
+    font-size:16px;
+    text-decoration:none;
+    display:inline;
+    text-align:center;
+    padding:auto;
+    color:#fff;
+    background-color:#ed3948;
+    border: 0px;
+    border-radius:20px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-right:20px;
+    margin-left: 20px;
+}
+input[type="submit"]#SaveButton:hover{
+    width:60px;
+    font-size:16px;
+    height: 35px;
+    text-decoration:none;
+    display:inline;
+    text-align:center;
+    padding:auto;
+    color:#fff;
+    background-color:#ff5362;
+    border: 0px;
+    border-radius:20px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-right:20px;
+    margin-left: 20px;
 }
