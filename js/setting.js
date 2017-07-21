@@ -21,7 +21,7 @@ soundData =
 
   ["sound/densyaga.mp3", "電車が"],
   ["sound/ressyaga.mp3", "列車が"],
-  ["sound/tsuukashimasu.mp3", "通過します"],
+  ["sound/tsuukashimasu.mp3", "通過します"],
 
   ["sound/touekidomarinoressyadesu.mp3", "当駅止まりの列車です"],
   ["sound/onorininaranaiyouninegaimasu.mp3", "お乗りにならないように願います"],
@@ -151,7 +151,7 @@ soundData =
   ["sound/touekidomariga.mp3", "当駅止まりが"],
 
   ["sound/ga_mairimasu.mp3", "まいります（⤵）"],
-  ["sound/tsuukashimasu.mp3", "通過します"],
+  ["sound/tsuukashimasu.mp3", "通過します"],
 
   ["sound/abunaidesukara.mp3", "危ないですから"],
   ["sound/kiiroitenjiburrokmade.mp3", "黄色い点字ブロックまで"],
@@ -160,7 +160,7 @@ soundData =
   ["sound/densyaga.mp3", "電車が"],
   ["sound/ressyaga.mp3", "列車が"],
   ["sound/ga_mairimasu.mp3", "まいります（⤵）"],
-  ["sound/tsuukashimasu.mp3", "通過します"],
+  ["sound/tsuukashimasu.mp3", "通過します"],
   
 
   ["sound/gochuikudasai.mp3", "ご注意ください"],
