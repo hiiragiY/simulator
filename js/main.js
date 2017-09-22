@@ -118,6 +118,7 @@ function testplay_sound()
 
 	audiotest = new Audio(testfile);
 	audiotest.play();
+	audiotest.play();
 }
 
 function reload_hour() {
