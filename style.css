@@ -13,7 +13,7 @@
 .wf-roundedmplus1c { font-family: "Rounded-L Mplus 1c"; }
 
 * {
--webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 /*クリックで展開するメニュー*/
@@ -47,11 +47,12 @@
     padding: 0;
     overflow: hidden;
     opacity: 0;
-    transition: 0.8s;
+    transition: 0s;
 }
 
 /*クリックで中身表示*/
 .EXPRENATION input:checked + .hidden_show {
+    font-size: 0.9em;
     padding: 10px 0;
     height: auto;
     opacity: 1;
@@ -90,10 +91,10 @@ div.text-narrow {
     display: inline-block;
 }
 
-/*Safariのみ見え方が異なるため、ハックで調整*/
+/*Safariのみ見え方が異なるためハックで調整*/
 body:last-child:not(:root:root) .cubettl {
-padding-top:0px;
-padding-bottom:1px;
+    padding-top:0px;
+    padding-bottom:1px;
 }
 
 div.HOMENUM {
@@ -145,10 +146,10 @@ div.BOARD-CONTENTS {
 }
 
 body{
- margin:0;
- /*background-color: #222222;*/
-
+     margin:0;
+     /*background-color: #222222;*/
 }
+
 div.SITE_WIDTH {
 	width: 1000px;
 	margin: auto;
@@ -179,6 +180,15 @@ p.title_underbar{
     border-bottom: 3px solid black;
     color: #ffffff;
 }
+
+hr.dash{
+    border:none;
+    border-top:dashed 1px #CCC;
+    height:1px;
+    color:#FFFFFF;
+    margin: 0 6 0 6;
+}
+
 div.electric-bored{
     background-color: #111111;
 }
@@ -250,10 +260,17 @@ div.EXPRENATION {
     color: #000000;
     background-color: #ffffff;
 }
-h2{
+
+/*h2{
     color: #ffffff;
     background-color:#66b04c;
 }
+*/
+
+h2.subtitle{
+    font-family: "mplus-1c-regular",sans-serif;
+}
+
 h3.HOWTOUSE{
     color: #ffffff;
     font-family: "mplus-1c-light";
@@ -264,6 +281,7 @@ h3.ATTENTION{
     font-style: 'Rounded Mplus 1c', sans-serif;
     background-color: #827f00;
 }
+
 table.EXAMPLE{
     color: #ffffff;
     font-style: 'Rounded Mplus 1c', sans-serif;
@@ -372,7 +390,7 @@ input[type="button"]#announceStartButton{
     width:40px;
     height: 40px;
     font-family: 'mplus-1c-regular','FontAwesome',sans-serif;
-    font-size:20px;
+    font-size:15px;
     text-decoration:none;
     display:inline;
     text-align:center;
@@ -402,7 +420,7 @@ input[type="button"]#ResetButton{
     width:40px;
     height: 40px;
     font-family: 'mplus-1c-regular','FontAwesome',sans-serif;
-    font-size:20px;
+    font-size:15px;
     text-decoration:none;
     display:inline;
     text-align:center;
@@ -431,7 +449,7 @@ input[type="button"]#ResetButton:hover{
 input[type="submit"]#SaveButton{
     width:40px;
     height: 40px;
-    font-size:20px;
+    font-size:15px;
     font-family: 'mplus-1c-regular','FontAwesome',sans-serif;
     text-decoration:none;
     display:inline;
