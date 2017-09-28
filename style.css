@@ -91,6 +91,7 @@ div.text-narrow {
     display: inline-block;
 }
 
+
 /*Safariのみ見え方が異なるためハックで調整*/
 body:last-child:not(:root:root) .cubettl {
     padding-top:0px;
