@@ -189,6 +189,40 @@ hr.dash{
     margin: 0 6 0 6;
 }
 
+ul li{
+    /*padding: 0.5em 0;*/
+    line-height: 1.5;
+    list-style-type: none;
+    /*list-style-position: inside;*/
+}
+
+ul li:before{
+    font-family: FontAwesome;
+    content: "\f054";
+    position: absolute;
+    /*left : 5em;*/
+    /*color: skyblue;*/
+    margin-left: -1.5em;
+}
+
+ul li#mail:before{
+    font-family: FontAwesome;
+    content: "\f003";
+    position: absolute;
+    /*left : 5em;*/
+    /*color: skyblue;*/
+    margin-left: -1.5em;
+}
+
+ul li#twitter:before{
+    font-family: FontAwesome;
+    content: "\f099";
+    position: absolute;
+    /*left : 5em;*/
+    /*color: skyblue;*/
+    margin-left: -1.5em;
+}
+
 div.electric-bored{
     background-color: #111111;
 }
