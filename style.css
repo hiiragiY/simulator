@@ -12,9 +12,9 @@
 
 .wf-roundedmplus1c { font-family: "Rounded-L Mplus 1c"; }
 
-/** {
+* {
 -webkit-appearance: none;
-}*/
+}
 
 /*クリックで展開するメニュー*/
 /*全体*/
