@@ -1,17 +1,17 @@
 function top_info()
 {
 	var station = new Array();
-	station[0] = '備中高梁';
-	station[1] = '魚　住';
-	station[2] = '鷹　取';
-	station[3] = '島　本';
-	station[4] = '東加古川';
-	station[5] = '東 姫 路';
+	station[0] = '高　槻';
+	station[1] = '米　原';
+	station[2] = '野　洲';
+	station[3] = '京　都';
+	station[4] = '大　阪';
+	station[5] = '神　戸';
 	station[6] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">名古屋</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>岡 崎</font>';
 	station[7] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">岡山</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>三 原</font>';
 	station[8] = '<font color=\"#377F0B\" style=\"letter-spacing: -3px\"><span class=\"transform\">米原</span><span style=\"font-size: 50%; letter-spacing: 0px; \">方面</span>大 垣</font>';
-	station[9] = '手　柄';
-	station[10] = '比叡山坂本';
+	station[9] = '西 明 石';
+	station[10] = '姫　路';
 
 	var no = Math.floor(Math.random() * station.length);
 	document.getElementById("output_for").innerHTML = station[no];
@@ -19,7 +19,7 @@ function top_info()
 	var type = new Array();
 
 	type[0] = '普　通';
-	type[1] = '<font color=\"#E68115\">貨　物</font>';
+	type[1] = '<font color=\"#E68115\">普　通</font>';
 	type[2] = '<font color=\"#E68115\">快　速</font>';
 	type[3] = '<font color=\"red\">新快速</font>';
 	type[4] = '<font color=\"red\">臨　時</font>';
