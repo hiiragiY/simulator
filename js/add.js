@@ -126,9 +126,9 @@ function Reload(category) {
                 case 9: TypeOutput('red',soundData_type[4][1]); RyousuOutput2('orange',false,'はるか12号'); break;
                 case 10: TypeOutput('red',soundData_type[4][1]); RyousuOutput2('orange',true,'サンダーバード５号'); break;
                 case 11: TypeOutput('red',soundData_type[4][1]); RyousuOutput2('orange',false,'くろしお５号'); break;
-                case 12: TypeOutput('red',soundData_type[4][1]); RyousuOutput2('orange',true,'ひ　だ　５号'); break;
-                case 13: TypeOutput('red',soundData_type[4][1]); RyousuOutput2('orange',true,'サンライズ瀬戸'); break;
-                case 14: TypeOutput('red',soundData_type[4][1]); RyousuOutput2('orange',true,'ﾄﾜｲﾗｲﾄｴｸｽﾌﾟﾚｽ'); break;
+                case 12: TypeOutput('red',soundData_type[4][1]); RyousuOutput2('orange',false,'ひ　だ　５号'); break;
+                case 13: TypeOutput('red',soundData_type[4][1]); RyousuOutput2('orange',false,'サンライズ瀬戸'); break;
+                case 14: TypeOutput('red',soundData_type[4][1]); RyousuOutput2('orange',false,'ﾄﾜｲﾗｲﾄｴｸｽﾌﾟﾚｽ'); break;
                 case 15:
                     document.getElementById("output_type").innerHTML = "<span style='color: #f0ee38;font-family:Dosis,sans-serif; font-size: 0.5em; line-height: 1em; letter-spacing: 2px;'><span style='display: inline; float: left;'>TWILIGHT</span><span style='display: inline; float: right;'>EXPRESS</span></span>";
                     document.getElementById("output_ryousu").innerHTML = "<span class='green' style='font-family:\"Sawarabi Mincho\";'>瑞　風</span>";
