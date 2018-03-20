@@ -1,4 +1,3 @@
-
 //「ファイルパスとファイル名」「表示するテキスト」の順で用意した音声パーツの情報を入力してください。
 //予め入力されているサンプルを参考に入力してください。
 //1行1文節で設定してください。
@@ -15,29 +14,21 @@ soundData =
   ["sound/sound/7bannoribani.mp3", "7番乗り場に"],
   ["sound/sound/9bannoriba-ni.mp3", "9番乗り場に"],
   ["sound/sound/mairimasu.mp3", "まいります"],
-
   ["sound/sound/densya-ha.mp3", "電車は"],
   ["sound/sound/ressya-ha.mp3", "列車は"],
-
   ["sound/sound/densyaga.mp3", "電車が"],
   ["sound/sound/ressyaga.mp3", "列車が"],
   ["sound/sound/tsuukashimasu.mp3", "通過します"],
-
   ["sound/sound/touekidomarinoressyadesu.mp3", "当駅止まりの列車です"],
   ["sound/sound/onorininaranaiyouninegaimasu.mp3", "お乗りにならないように願います"],
-
   ["sound/sound/honzituhauntenwotoriyameteorimasu.mp3", "本日は運転を取りやめております"],
   ["sound/sound/oisoginotokorotaihengomeiwakuwookakesimasu.mp3", "お急ぎのところ大変ご迷惑をおかけします"],
-
   ["sound/sound/orikaesi.mp3", "折り返し"],
-
   ["sound/sound/JRkobesen.mp3", "JR神戸線"],
   ["sound/sound/JRkyotosen.mp3", "JR京都線"],
   ["sound/sound/biwakosen.mp3", "琵琶湖線"],
   ["sound/sound/koseisen.mp3", "湖西線"],
   ["sound/sound/saganosaninsen.mp3", "嵯峨野山陰線"],
-
-
   ["sound/sound/1bannoriba-kara.mp3", "1番のりばから"],
   ["sound/sound/3bannoriba-kara.mp3", "3番のりばから"],
   ["sound/sound/5bannoriba-kara.mp3", "5番のりばから"],
@@ -48,21 +39,15 @@ soundData =
   ["sound/sound/30bannoriba-kara.mp3", "30番のりばから"],
   ["sound/sound/32bannoriba-kara.mp3", "32番のりばから"],
   ["sound/sound/hassyasimasu.mp3", "発車します"],
-
   ["sound/sound/densya-ha.mp3", "電車は"],
   ["sound/sound/ressya-ha.mp3", "列車は"],
-
   ["sound/sound/touchaku-simasu.mp3", "（〜両で）到着します"],
-
   ["sound/sound/mae.mp3", "前"],
   ["sound/sound/yuki.mp3", "行き"],
   ["sound/sound/ushiro.mp3", "後ろ"],
   ["sound/sound/yukidesu.mp3", "行きです"],
-
-
   ["sound/sound/tohyouzisita.mp3", "(特急名)と表示した各号車札のところでお待ち下さい"],
   ["sound/sound/tohyouzisitazyousyagutiannnaideomatikudasai.mp3", "(特急名)と表示した乗車口案内でお待ち下さい"],
- 
   ["sound/sound/ashimoto.mp3", "足元"],
   ["sound/sound/siroiro.mp3", "白色"],
   ["sound/sound/kiiro.mp3", "黄色"],
@@ -70,29 +55,23 @@ soundData =
   ["sound/sound/sankakuzirusino.mp3", "三角印の"],
   ["sound/sound/sankakuhjirushi.mp3", "三角印"],
   ["sound/sound/yazirusino.mp3", "矢印の"],
-
   ["sound/sound/turisagehuda.mp3", "つり下げ札"],
-
   ["sound/sound/itibankara.mp3", "1番から"],
   ["sound/sound/2bankara.mp3", "2番から"],
   ["sound/sound/3bankara.mp3", "3番から"],
   ["sound/sound/4bankara.mp3", "4番から"],
   ["sound/sound/5bankara.mp3", "5番から"],
   ["sound/sound/7bankara.mp3", "7番から"],
-
   ["sound/sound/6bande.mp3", "6番で"],
   ["sound/sound/7bande.mp3", "7番で"],
   ["sound/sound/9bande.mp3", "9番で"],
   ["sound/sound/10bande.mp3", "10番で"],
   ["sound/sound/12bande.mp3", "12番で"],
-
   ["sound/sound/2retuninarande.mp3", "2列に並んで"],
   ["sound/sound/omatikudasai.mp3", "お待ち下さい"],
-
   ["sound/sound/niha.mp3", "（駅名）には"],
   ["sound/sound/tomarimasen.mp3", "止まりません"],
   ["sound/sound/gochuikudasai.mp3", "ご注意ください"],
-
   ["sound/sound/yaku5hun.mp3", "約5分"],
   ["sound/sound/yaku120punizyou.mp3", "約120分以上"],
   ["sound/sound/okureteunntennsiteorimasu.mp3", "遅れて運転しております"],
@@ -108,40 +87,28 @@ soundData =
   ["sound/sound/gochuikudasai.mp3", "ご注意ください"],
   ["sound/sound/ni.mp3", "駅名に"],
   ["sound/sound/rinjiteisyasimasu.mp3", "臨時停車します"],
-
   ["sound/sound/madeno.mp3", "（駅名）までの"],
   ["sound/sound/teisyaekiha.mp3", "停車駅は"],
-
   ["sound/sound/kara.mp3", "から"],
   ["sound/sound/kakuekito.mp3", "各駅と"],
   ["sound/sound/kakuekidesu.mp3", "各駅です"],
-
   ["sound/sound/konodensyaha.mp3", "この電車は"],
   ["sound/sound/heha.mp3", "へは"],
   ["sound/sound/mairimasennode.mp3", "まいりませんので"],
   ["sound/sound/gochuikudasai.mp3", "ご注意ください"],
-
   ["sound/sound/desu.mp3", "です"],
-
   ["sound/sound/niha.mp3", "（駅名）には"],
-
   ["sound/sound/kono.mp3", "この"],
   ["sound/sound/densyaga.mp3", "電車が"],
   ["sound/sound/ressyaga.mp3", "列車が"],
-
   ["sound/sound/sakinitukimasu.mp3", "先につきます"],
-
   ["sound/sound/niha.mp3", "（駅名）には"],
   ["sound/sound/atono.mp3", "あとの"],
-
   ["sound/sound/specialrapidservise-ga.mp3", "新快速が"],
   ["sound/sound/sakinitukimasu.mp3", "先につきます"],
-
   ["sound/sound/gozyousyanihat.mp3", "ご乗車には乗車券の他に特急券が必要です"],
   ["sound/sound/gozyousyanihats.mp3", "ご乗車には乗車券の他に特急券と寝台券が必要です"],
-
   ["sound/sound/omataseitasimasita.mp3", "お待たせいたしました（特急のみ）"],
-
   ["sound/sound/mamonaku.mp3", "まもなく"],
   ["sound/sound/1bannoriba-ni.mp3", "1番乗り場に"],
   ["sound/sound/1bannoriba-wo.mp3", "1番乗り場を"],
@@ -149,30 +116,21 @@ soundData =
   ["sound/sound/4bannoriba-ni.mp3", "4番乗り場に"],
   ["sound/sound/7bannoribani.mp3", "7番乗り場に"],
   ["sound/sound/9bannoriba-ni.mp3", "9番乗り場に"],
-
   ["sound/sound/yukiga.mp3", "（時刻・行き先）行きが"],
   ["sound/sound/touekidomariga.mp3", "当駅止まりが"],
-
   ["sound/sound/ga_mairimasu.mp3", "まいります（⤵）"],
   ["sound/sound/tsuukashimasu.mp3", "通過します"],
-
   ["sound/sound/abunaidesukara.mp3", "危ないですから"],
   ["sound/sound/kiiroitenjiburrokmade.mp3", "黄色い点字ブロックまで"],
   ["sound/sound/osagarikudasai.mp3", "お下がりください"],
-
   ["sound/sound/densyaga.mp3", "電車が"],
   ["sound/sound/ressyaga.mp3", "列車が"],
   ["sound/sound/ga_mairimasu.mp3", "まいります（⤵）"],
   ["sound/sound/tsuukashimasu.mp3", "通過します"],
-  
-
   ["sound/sound/gochuikudasai.mp3", "ご注意ください"],
-
   ["sound/sound/ressyagatouchakusimasitemo.mp3", "列車が到着しましても"],
   ["sound/sound/syanainoseisouwookonaimasu.mp3", "車内清掃を行います"],
   ["sound/sound/shibarakuomatikudasai.mp3", "しばらくお待ちください"],
-
-
   ["sound/sound/takatsukitakatsukidesu.mp3", "高槻、高槻です"],
   ["sound/sound/osaka-osakadesu.mp3", "大阪、大阪です"],
   ["sound/sound/settumotoyamasettumotoyamadesu.mp3", "摂津本山、摂津本山です"],
@@ -180,11 +138,9 @@ soundData =
   ["sound/sound/nishiakashinishiakashidesu.mp3", "西明石、西明石です"],
   ["sound/sound/owasuremonononaiyounigochuikudasai.mp3", "お忘れ物のないようにご注意ください"],
   ["sound/sound/noriorinosai-asimotoni-gotyuikudasai.mp3", "乗り降りの際足元にご注意ください"],
-
   ["sound/sound/konodensyaha.mp3", "この電車は"],
   ["sound/sound/orikaesi.mp3", "折り返し"],
   ["sound/sound/yukitonarimasu.mp3", "駅名（）行きとなります"],
-
   ["sound/sound/JRkobesen.mp3", "JR神戸線"],
   ["sound/sound/JRkyotosen.mp3", "JR京都線"],
   ["sound/sound/biwakosen.mp3", "琵琶湖線"],
@@ -194,31 +150,22 @@ soundData =
   ["sound/sound/shinkansen.mp3", "新幹線"],
   ["sound/sound/kintetusen.mp3", "近鉄線"],
   ["sound/sound/tikatetusenha.mp3", "地下鉄線は"],
-
   ["sound/sound/sorezorenorikaedesu.mp3", "それぞれ乗り換えです"],
-
-
   ["sound/sound/hachizyouhigasiguchiha.mp3", "八条東口は"],
   ["sound/sound/eigyowosyuryousaseteitadaiteorimasu.mp3", "営業を終了させていただいております"],
-
   ["sound/sound/1bannoriba-ni.mp3", "1番乗り場に"],
   ["sound/sound/3bannoriba-ni.mp3", "3番乗り場に"],
   ["sound/sound/4bannoriba-ni.mp3", "4番乗り場に"],
   ["sound/sound/7bannoribani.mp3", "7番乗り場に"],
   ["sound/sound/9bannoriba-ni.mp3", "9番乗り場に"],
-
   ["sound/sound/teisyachuno.mp3", "停車中の"],
   ["sound/sound/densya-ha.mp3", "電車は"],
   ["sound/sound/ressya-ha.mp3", "列車は"],
-
   ["sound/sound/yukidesu.mp3", "行きです"],
-
   ["sound/sound/doagasimarimasu.mp3", "ドアが閉まります"],
   ["sound/sound/gochuikudasai.mp3", "ご注意ください"],
-
   ["sound/sound/null-250.mp3", ""] //この最後の行は編集しないでください
- ]
-
+ ];
  soundData_silent =
   [
    ["sound/silent/null-250.mp3", "(0.25)"],
@@ -228,7 +175,7 @@ soundData =
    ["sound/silent/null-2000.mp3", "(2.0)"],
    ["sound/silent/null-3000.mp3", "(3.0)"],
    ["sound/silent/null-250.mp3", ""] //この最後の行は編集しないでください
- ]
+ ];
  soundData_hour=
   [
    ["sound/hour/0ji.mp3", "0時"],
@@ -244,7 +191,7 @@ soundData =
    ["sound/hour/21ji.mp3", "21時"],
    ["sound/hour/23ji.mp3", "23時"],
    ["sound/sound/null-250.mp3", ""] //この最後の行は編集しないでください
- ]
+ ];
  soundData_minute=
  [
   ["sound/minute/chodo-hatsu.mp3", "00分発"],
@@ -281,7 +228,7 @@ soundData =
    ["sound/bound(for)/tokyo-yukiha.mp3", "東　京(行)"],
    ["sound/bound(for)/takayama_yukiha.mp3", "高　山(行)"],
    ["sound/bound(for)/toyohashi-yukiha.mp3", "豊　橋(行)"],
-   ["sound/bound(for)/kanazawa_toyama_yukiha.mp3", "金 沢・富 山(行)"], 
+   ["sound/bound(for)/kanazawa_toyama_yukiha.mp3", "金 沢・富 山(行)"],
    ["sound/bound(for)/turuga_yukiha.mp3", "敦　賀(行)"],
    ["sound/bound(for)/nagahama_yukiha.mp3", "長　浜(行)"],
    ["sound/bound(for)/maibara_yukiha.mp3", "米　原(行)"],
@@ -290,7 +237,7 @@ soundData =
    ["sound/bound(for)/oumiimazu_yukiha.mp3", "近江今津(行)"],
    ["sound/bound(for)/oumimaiko_yukiha.mp3", "近江舞子(行)"],
    ["sound/bound(for)/goma-yukiha.mp3", "胡　麻(行)"],
-   ["sound/bound(for)/tuge_yukiha.mp3", "柘　植(行)"], 
+   ["sound/bound(for)/tuge_yukiha.mp3", "柘　植(行)"],
    ["sound/bound(for)/osaka_yukiha.mp3", "大　阪(行)"],
    ["sound/bound(for)/kansaikukou_yukiha.mp3", "関西空港(行)"],
    ["sound/bound(for)/shirahama_yukiha.mp3", "白　浜(行)"],
@@ -306,7 +253,7 @@ soundData =
    ["sound/bound(for)/shimonoseki_yukiha.mp3", "下　関(行)"],
    ["sound/bound(for)/yukiha.mp3", "行きは"],
    ["sound/sound/null-250.mp3", ""] //この最後の行は編集しないでください
- ]
+ ];
  soundData_and=
   [
    ["sound/dest(and)/yokohama.mp3", "横浜"],
@@ -353,8 +300,8 @@ soundData =
    ["sound/dest(and)/akashi.mp3", "明石"],
    ["sound/dest(and)/nishiakashi.mp3", "西明石"],
    ["sound/dest(and)/kara.mp3", "から"],
-   ["sound/sound/null-250.mp3", ""] //この最後の行は編集しないでください  
- ]
+   ["sound/sound/null-250.mp3", ""] //この最後の行は編集しないでください
+ ];
 soundData_melody=
 [
   ["sound/melody/chime-hyojun.mp3", "♪予告メロディ JR標準"],
@@ -378,7 +325,7 @@ soundData_melody=
   ["sound/melody/sekkin-shimamoto.mp3", "♪島本駅接近メロディ"],
   ["sound/melody/sekkin-hyojun.mp3", "♪JR西標準接近メロディ"],
   ["sound/sound/null-250.mp3", ""] //この最後の行は編集しないでください
-]
+];
 soundData_type=
 [
   ["sound/type/local.mp3", "普　通"],
@@ -387,18 +334,16 @@ soundData_type=
   ["sound/type/tokubetsukaisoku.mp3", "特別快速"],
   ["sound/type/express.mp3", "特　急"],
   ["sound/type/sindai-express.mp3", "寝台特急"],
-
-  ["sound/type/superhakuto.mp3", "スーパーはくと"],
-  ["sound/type/victoryhakuto-gou.mp3", "ビクトリーはくと号"],
-  ["sound/type/biwakoexpress.mp3", "びわこエクスプレス"],
+  ["sound/type/superhakuto.mp3", "ｽｰﾊﾟｰはくと"],
+  ["sound/type/victoryhakuto-gou.mp3", "ﾋﾞｸﾄﾘｰはくと号"],
+  ["sound/type/biwakoexpress.mp3", "びわこｴｸｽﾌﾟﾚｽ"],
   ["sound/type/haruka.mp3", "はるか"],
-  ["sound/type/thunderbird.mp3", "サンダーバード"],
+  ["sound/type/thunderbird.mp3", "ｻﾝﾀﾞｰﾊﾞｰﾄﾞ"],
   ["sound/type/kuroshio.mp3", "くろしお"],
   ["sound/type/hida.mp3", "ひだ"],
-  ["sound/type/sunrise-seto-go.mp3", "サンライズ瀬戸号"],
-  ["sound/type/towirightexpressgou.mp3", "トワイライトエクスプレス号"],
+  ["sound/type/sunrise-seto-go.mp3", "ｻﾝﾗｲｽﾞ瀬戸号"],
+  ["sound/type/towirightexpressgou.mp3", "ﾄﾜｲﾗｲﾄｴｸｽﾌﾟﾚｽ号"],
   ["sound/type/mizukaze.mp3", "瑞風"],
-
   ["sound/type/JRtouzaisenkeiyu.mp3", "JR東西線経由"],
   ["sound/type/koseisen.mp3", "湖西線"],
   // ["sound/koseisen-keiyu.mp3", "湖西線経由"],
@@ -414,7 +359,7 @@ soundData_type=
   ["sound/type/30gou.mp3", "30号"],
   ["sound/type/35gou.mp3", "35号"],
   ["sound/sound/null-250.mp3", ""] //この最後の行は編集しないでください
-]
+];
 soundData_ryousu=
 [
   ["sound/cars(ryousu)/3ryou-de.mp3", "3両で"],
@@ -427,7 +372,10 @@ soundData_ryousu=
   ["sound/cars(ryousu)/12ryou-de.mp3", "12両で"],
   ["sound/cars(ryousu)/7ryouni.mp3", "7両に"],
   ["sound/cars(ryousu)/9ryouni.mp3", "9両に"],
-  ["sound/cars(ryousu)/4ryouha.mp3", "(前/後)4両は"],
-  ["sound/cars(ryousu)/8ryouha.mp3", "(前/後)8両は"],
+  ["sound/cars(ryousu)/4ryouha.mp3", "4両は"],
+  ["sound/cars(ryousu)/8ryouha.mp3", "8両は"],
   ["sound/sound/null-250.mp3", ""] //この最後の行は編集しないでください
-]
+];
+
+
+

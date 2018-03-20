@@ -1,0 +1,570 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+    font-family: 'mplus-1c-light',sans-serif;
+}
+
+h2 {
+    font-family: 'mplus-1c-bold', sans-serif;
+}
+
+h3 {
+    font-family: 'mplus-1c-bold', sans-serif;
+}
+
+* {
+    -webkit-appearance: none;
+}
+
+div#site-box {
+    width: 1000px;
+    margin: auto;
+}
+
+div#site-box .title{
+    margin:0.5em;
+    font-size: 1.8em;
+    color: #2c3148;
+    line-height: 1em;
+}
+
+div#electrical-scoreboard {
+    width: 100%;
+    height: 180px;
+    padding: 10px 0 10px 0;
+    background: #181818;
+    text-align: center;
+}
+
+div#sign-area {
+    display: inline-block;
+    width: 900px;
+    height: 100%;
+    text-align: center;
+}
+
+div#sign-area p{
+    color: white;
+    font-family: 'mplus-1c-light',sans-serif;
+}
+
+table.signboard td{
+    color: white;
+    font-family: 'Noto Sans Japanese',sans-serif;
+    text-align: center;
+}
+
+table.signboard td span.small {
+    font-size: 0.5em;
+}
+
+.led {
+    width:auto;
+    position:relative;
+    /*font-size: 2em;*/
+    line-height: 0.85em;
+}
+
+.led:after {
+    content:' ';
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background:url("../bg-led.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    -webkit-background-size:2.6px 2.6px;
+    -moz-background-size:2.6px 2.6px;
+    -ms-background-size:2.6px 2.6px;
+    -o-background-size:2.6px 2.6px;
+    background-size:2.6px 2.6px;
+    z-index:15;
+}
+
+div#select-area {
+    width: 100%;
+    height: 350px;
+    font-family: "mplus-1c-regular" ,sans-serif;
+    padding: auto;
+    margin: 30px 0 30px 0;
+}
+
+div#sound-list {
+    display: inline-block;
+    float: left;
+    width: 640px;
+    height: 100%;
+    color: #2c3148;
+    text-align: center;
+}
+div#sound-list select{
+    height: 160px;
+    font-family: 'mplus-1c-light',sans-serif;
+    margin: 0 5px 15px 5px;
+}
+
+div.select {
+    display: inline-block;
+    float: left;
+}
+
+div#button-panel {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+div#button-panel a{
+    margin: 0 25px 0 25px;
+}
+
+div#work-area {
+    display: inline-block;
+    float: right;
+    width: 360px;
+    height: 100%;
+    font-family: "mplus-1c-light",sans-serif;
+    color: #2c3148;
+    text-align: right;
+}
+div#work-area textarea {
+    width: 340px;
+    height: 100%;
+    font-family: "mplus-1c-light", sans-serif;
+    margin: 0 5px 15px 5px;
+}
+
+div.update{
+}
+
+div#explain {
+    width: 100%;
+}
+
+/*アコーディオンここから*/
+/*ボックス全体*/
+.accbox {
+    margin: 2em 0;
+    padding: 0;
+}
+
+/*ラベル*/
+.accbox label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 13px 12px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #51587b;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+
+/*アイコンを表示*/
+.accbox label:before {
+    content: '\f054';
+    font-family: 'FontAwesome';
+    padding-right: 8px;
+}
+
+/*ラベルホバー時*/
+.accbox label:hover {
+    background :#2c3148;
+}
+
+/*チェックは隠す*/
+.accbox input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.cssacc:checked + label + .accshow {
+    height: auto;
+    padding: 5px;
+    /*background: #fff5eb;*/
+    opacity: 1;
+}
+
+.accbox .accshow p {
+    margin: 15px 10px}
+
+/*アイコンを入れ替える*/
+.cssacc:checked + label:before {
+    content: '\f078';
+}
+/*アコーディオンここまで*/
+
+/*ボタンここから*/
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #87befd;
+    color: #FFF;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2em;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.btn:hover{
+    background: #668ad8;
+}
+
+.deg_btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 19px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    background: #668ad8;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: .4s;
+}
+
+.deg_btn:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 21px white;
+    border-bottom: solid 41px transparent;
+    z-index: 1;
+    transition: .4s;
+}
+
+.deg_btn:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 21px transparent;
+    border-bottom: solid 41px white;
+    z-index: 1;
+    transition: .4s;
+}
+
+.deg_btn:hover:before, .deg_btn:hover:after{
+    border-left-width: 25px;
+}
+
+.deg_btn:hover{
+    background: #2c3148;
+}
+/*ボタンここまで*/
+
+ul.frame{
+    border: double 4px #2c3148;
+    padding: 0.5em 1em 0.5em 2.3em;
+    position: relative;
+}
+ul.frame li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+    list-style-type: none!important;/*ポチ消す*/
+}
+ul.frame li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0a4";
+    position: absolute;
+    left : 1em; /*左端からのアイコンまで*/
+    color: #2c3148;/*アイコン色*/
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
