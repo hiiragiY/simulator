@@ -112,6 +112,26 @@ h3 {
     -webkit-appearance: none;
 }
 
+@font-face {
+    font-family: 'mplus-1c-light';
+    src: url(font/mplus-1c-light.ttf);
+}
+
+@font-face {
+    font-family: 'mplus-1c-regular';
+    src: url(font/mplus-1c-regular.ttf);
+}
+
+@font-face {
+    font-family: 'mplus-1c-medium';
+    src: url(font/mplus-1c-medium.ttf);
+}
+
+@font-face {
+    font-family: 'mplus-1c-thin';
+    src: url(font/mplus-1c-thin.ttf);
+}
+
 div#site-box {
     width: 1000px;
     margin: auto;
